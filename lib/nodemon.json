@@ -1,0 +1,9 @@
+{
+  "verbose": true,
+  "watch": ["src/**"],
+  "script": "lib/build.js",
+  "execMap": {
+    "ily": "yarn build"
+  },
+  "ext": "ily"
+}

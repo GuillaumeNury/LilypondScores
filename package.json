@@ -1,0 +1,13 @@
+{
+  "name": "lilypond-js",
+  "version": "1.0.0",
+  "main": "lib/build.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "node lib/build.js",
+    "start": "nodemon --config lib/nodemon.json"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.4"
+  }
+}
