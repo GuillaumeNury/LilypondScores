@@ -1,3 +1,3 @@
 module.exports = {
-  binPath: "lilypond"
+  binPath: "/usr/local/bin/lilypond"
 };
