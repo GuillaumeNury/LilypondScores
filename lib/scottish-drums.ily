@@ -75,6 +75,7 @@ drumPitchNames
 	% Les hampes se poussent devant les n° de RA
 	% il faudra faire précéder un \markup par \textLengthOff 
 	\textLengthOn
+	\numericTimeSignature
 	
 	% indications de nuances en haut
 	\dynamicUp
