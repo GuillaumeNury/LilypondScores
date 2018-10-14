@@ -20,7 +20,14 @@ Les PDF générés par Lilypond ce trouve [sur ce site](https://guillaumenury.gi
 
 ## Utilisation
 
-- Lancer `npm run start` : chaque modification sur un fichier `.ily` lancera la compilation.
+- Lancer `npm run start <nom du fichier ily>` : chaque modification sur un fichier `.ily` lancera la compilation du fichier.
+  **Attention !** Pour pouvoir être compilé, le fichier doit impérativement être renseigné dans le fichier `scores.js`.
 - Ouvrir l'image correspondante qui se trouve dans le dossier `dist`
 
-_Pour générer un pdf, utiliser `npm run release`._
+_Pour générer les PDF, utiliser `npm run release`._
+
+## Liens utiles
+
+- [Blog de Simon Froger](https://simonfroger.wordpress.com/lilypond/caisse-claire-ecossaise/) : écriture des fla/ra/trolets/etc...
+- [Documentation de Lilypond](http://lilypond.org/doc/v2.18/Documentation/notation/index.fr.html)
+- [Extension VS Code pour Lilypond](https://marketplace.visualstudio.com/items?itemName=truefire.lilypond)

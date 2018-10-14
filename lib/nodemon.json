@@ -1,9 +1,9 @@
 {
   "verbose": true,
   "watch": ["src/**"],
-  "script": "lib/build.js",
+  "script": "./src/tours.ily",
   "execMap": {
-    "ily": "yarn build"
+    "ily": "npm run build"
   },
   "ext": "ily"
 }

@@ -1,4 +1,6 @@
 %{
+	SOURCE : https://simonfroger.wordpress.com/lilypond/caisse-claire-ecossaise/
+
 	Configuration d'un fichier LilyPond pour l'écriture d'une partition de
 	caisse claire écossaise.
 	
