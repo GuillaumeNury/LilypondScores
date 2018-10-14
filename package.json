@@ -6,7 +6,7 @@
   "private": true,
   "scripts": {
     "build": "node lib/build.js",
-    "release": "node lib/release.js",
+    "release": "node lib/release.js && node lib/generateHtml",
     "start": "nodemon --config lib/nodemon.json"
   },
   "devDependencies": {
