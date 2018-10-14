@@ -28,6 +28,6 @@ _Pour générer les PDF, utiliser `npm run release`._
 
 ## Liens utiles
 
-- [Blog de Simon Froger](https://simonfroger.wordpress.com/lilypond/caisse-claire-ecossaise/) : écriture des fla/ra/trolets/etc...
+- [Blog de Simon Froger](https://simonfroger.wordpress.com/lilypond/caisse-claire-ecossaise/) : écriture des fla/ra/triolets/etc...
 - [Documentation de Lilypond](http://lilypond.org/doc/v2.18/Documentation/notation/index.fr.html)
 - [Extension VS Code pour Lilypond](https://marketplace.visualstudio.com/items?itemName=truefire.lilypond)
