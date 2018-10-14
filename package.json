@@ -1,8 +1,9 @@
 {
-  "name": "lilypond-js",
+  "name": "lilypond-scores",
   "version": "1.0.0",
   "main": "lib/build.js",
   "license": "MIT",
+  "private": true,
   "scripts": {
     "build": "node lib/build.js",
     "release": "node lib/release.js",

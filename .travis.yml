@@ -1,0 +1,21 @@
+language: python
+
+python:
+  - "2.7"
+
+node_js: "node"
+
+cache:
+  directories:
+    - $HOME/virtualenv/python2.7.9/lib/python2.7/site-packages
+    - node_modules
+
+before_install:
+  - cp config.travis.js config.js
+
+install:
+  - curl http://lilypond.org/download/binaries/linux-64/lilypond-2.18.2-1.linux-64.sh | sudo bash -
+  - npm install
+
+script:
+  - npm run release
