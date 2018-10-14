@@ -21,7 +21,17 @@ Les PDF générés par Lilypond ce trouve [sur ce site](https://guillaumenury.gi
 ## Utilisation
 
 - Lancer `npm run start <nom du fichier ily>` : chaque modification sur un fichier `.ily` lancera la compilation du fichier.
-  **Attention !** Pour pouvoir être compilé, le fichier doit impérativement être renseigné dans le fichier `scores.js`.
+
+  **Attention !** Pour pouvoir être compilé, le fichier doit impérativement avoir le commentaire suivant comme première ligne :
+  ```
+  % LilypondScores
+  ```
+
+  Si c'est un brouillon :
+  ```
+  % LilypondScores:draft
+  ```
+
 - Ouvrir l'image correspondante qui se trouve dans le dossier `dist`
 
 _Pour générer les PDF, utiliser `npm run release`._

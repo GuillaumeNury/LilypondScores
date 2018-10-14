@@ -1,3 +1,4 @@
+% LilypondScores
 \version "2.18.2"
 
 \include "../lib/scottish-drums.ily"
