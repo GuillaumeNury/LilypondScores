@@ -16,6 +16,7 @@ before_install:
 install:
   - curl http://lilypond.org/download/binaries/linux-64/lilypond-2.18.2-1.linux-64.sh -o lilypond.sh
   - sh lilypond.sh --batch
+  - npm install
 
 script:
   - npm run release
