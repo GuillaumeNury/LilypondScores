@@ -14,8 +14,8 @@ before_install:
   - cp config.travis.js config.js
 
 install:
-  - curl http://lilypond.org/download/binaries/linux-64/lilypond-2.18.2-1.linux-64.sh | sudo bash -
-  - npm install
+  - curl http://lilypond.org/download/binaries/linux-64/lilypond-2.18.2-1.linux-64.sh -o lilypond.sh
+  - sh lilypond.sh
 
 script:
   - npm run release
