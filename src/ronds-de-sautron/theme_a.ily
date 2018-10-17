@@ -6,7 +6,7 @@
 		(#5 d) \ra d8
 		(#5 d4)
 		% Mesure 2 - 4
-		d16\<-> g d d\!
+		d16\>-> g d d\!
 		g d \fla g8
 		\fla d4
 		\break
