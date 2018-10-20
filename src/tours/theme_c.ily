@@ -15,4 +15,5 @@ d8-> d16 g d g d8
 % Mesure 7
 \fla d8 \ra d8 (#5 d8.) g16
 % Mesure 8
-d8 \fla d \ra d4 (#9 d4)
+d8 \fla d \ra d4 (#9 d4) r4
+\break
