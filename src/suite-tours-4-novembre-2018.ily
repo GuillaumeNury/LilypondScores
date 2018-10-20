@@ -6,7 +6,7 @@
 \header {
 	title = "Suite Tours (4 novembre 2018)"
 	instrument = "Caisses Claires"
-	composer = "Aurélien Étienne"
+	composer = "Aurélien Étienne / Guillaume Nury"
 	tagline = ##f
 }
 
