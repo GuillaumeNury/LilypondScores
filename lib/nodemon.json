@@ -1,6 +1,6 @@
 {
   "verbose": true,
-  "watch": ["src/**"],
+  "watch": ["src/**", "theme/**", "lib/**"],
   "script": "./src/tours.ily",
   "execMap": {
     "ily": "npm run build"
