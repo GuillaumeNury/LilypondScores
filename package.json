@@ -4,6 +4,7 @@
   "main": "lib/build.js",
   "license": "MIT",
   "private": true,
+  "author": "Guillaume Nury",
   "scripts": {
     "build": "node lib/build.js",
     "release": "node lib/release.js && node lib/generateHtml",
