@@ -1,3 +1,4 @@
+% Normal
 \layout {
 	\numericTimeSignature
 }
