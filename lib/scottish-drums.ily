@@ -69,6 +69,9 @@ drumPitchNames
 	system-system-spacing #'basic-distance = #15 % distance entre systèmes
 }
 
+\midi {
+}
+
 \layout {
 	% pas de retrait de la première ligne
 	indent = 0
