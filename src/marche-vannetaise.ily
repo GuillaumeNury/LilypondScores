@@ -10,14 +10,6 @@
 	tagline = ##f
 }
 
-repnote = \markup \lower #4 \halign #1 {
-	\path #0.1 #'((moveto 0 0)
-	(lineto 0 -1)
-	(lineto 2 -1)
-	(lineto 2 0)
-	)
-}
-
 \new DrumStaff {
 	\drummode {
 		\time 4/4
