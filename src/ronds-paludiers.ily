@@ -1,5 +1,5 @@
 % LilypondScores
-\version "2.18.2"
+->ersion "2.18.2"
 
 \include "src/core.ily"
 
@@ -18,8 +18,8 @@
 		\repeat volta 2 {
 			\fla d4 g8
 			d4 g8->
-			\ra d4 (#5 d8)
-			g4-> \ra g8
+			\ra d4.
+			(#7 g4) \ra g8
 
 			(#3 d4) \ra d8
 			(#3 g4) g8
@@ -43,12 +43,12 @@
 			}
 		}
 
-		\ra d4 (#5 d8)
-		g4-> g8\v
+		\ra d4.
+		(#7 g4) g8
 		\tuplet 4/6 { d16\< g d g\! }
-		d4-> d8\v
+		d4-> d8
 
-		g4 g8\v
+		g4 g8->
 		d8 g g
 		\ra d4.
 		(#7 g4.)
@@ -58,7 +58,7 @@
 			d8-> g d->
 			g d g->
 			\tuplet 4/6 { d16\< g d g\! }
-			d4.
+			d4.->
 		}
 		\alternative {
 			{
@@ -81,10 +81,10 @@
 		\repeat volta 2 {
 			\fla d4 g8
 			d4 g8->
-			\tuplet 4/6 { d16\< g d g\! }
-			d4-> d8\v
+			\tuplet 4/6 { d16 g d g }
+			d4 d8->
 
-			g4 g8\v
+			g4 g8->
 			\tuplet 4/6 { d16 g d g }
 			\ra d4.
 			(#7 g4.)
@@ -93,9 +93,9 @@
 			d8 d g
 			d-> g d
 			g d g->
-			d4 d8\v
+			d4 d8->
 
-			g4 g8\v
+			g4 g8->
 			\tuplet 4/6 { d16 g d g }
 			\ra d4.
 			(#7 g4.)
@@ -104,36 +104,44 @@
 
 		\fla d4 g8
 		d4 g8->
-		\tuplet 4/6 { d16\< g d g\! }
-		d4-> d8\v
+		\tuplet 4/6 { d16 g d g }
+		d4 d8->
 
 		g8 d g->
-		d g d->
-		\ra d4.
-		(#7 g4.)
+		d g d
+		\ra g4.
+		(#7 d4.)
 		\break
 
-		\ra d4 (#5 d8)
-		g4-> g8
-		\tuplet 4/6 { d16\< g d g\! }
-		d4-> d8
+		\ra d4.
+		(#7 g4) g8
+		\tuplet 4/6 { d16 g d g }
+		d4 d8->
 
 		g8 d g->
-		d g d->
-		\ra d4.
-		(#7 g4.)
+		d g d
+		\ra g4.
+		(#7 d4.)
 		\break
 
 		\fla d4 g8
 		d4 g8->
-		\tuplet 4/6 { d16\< g d g\! }
-		d4-> d8\v
+		\tuplet 4/6 { d16 g d g }
+		d4 d8->
 
 		g8 d g->
-		d g d->
-		\ra d4.
-		(#7 g4.)
+		d g d
+		\ra g4.
+		(#7 d4.)
 		\bar "|."
 		\break
+
+		\mark "Final"
+		\fla d4 g8
+		d4 g8->
+		\tuplet 4/6 { d16 g d g }
+		d4.
+
+		r1.
 	}
 }
