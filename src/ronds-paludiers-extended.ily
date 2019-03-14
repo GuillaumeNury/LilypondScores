@@ -4,7 +4,7 @@
 \include "src/core.ily"
 
 \header {
-	title = "Ronds Paludiers"
+	title = "Ronds Paludiers (en 2 pages)"
 	instrument = "Caisses Claires"
 	composer = "Christophe Declercq"
 	tagline = ##f
