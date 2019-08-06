@@ -6,7 +6,7 @@
 \header {
 	title = "Andro Saint Patrick"
 	instrument = "Caisses Claires"
-	composer = "Air commun"
+	composer = "Yann Lemetayer"
 	tagline = ##f
 }
 
@@ -14,26 +14,51 @@
 \new DrumStaff {
 	\drummode {
 		\time 4/4
-		\mark \markup { \italic "4 fois" }
-		\repeat volta 4 {
-			d16 g d g
-			d8-> g
-			\set Timing.beamExceptions = #'()
-			\fla d \ra d (#5 d) g
-			d16 g d g
-			d8-> g
-			\ra d4 (#9 d)
+		\mark \markup { \bold "A " \italic "(2 fois)" }
+		\repeat volta 2 {
+			\fla d8 g16-> d
+			g g d8
+			\fla d8 \set Timing.beamExceptions = #'()
+			\ra d8 (#9 d8 d8)
+
+			d16-> g d\> d\!
+			g\< d\! g8->
+			r8 g16 g
+			\ra d4 (#9 \break
+			
+			d8) g16-> d
+			g g d8
+			\fla d8 \set Timing.beamExceptions = #'() \ra d8
+			(#9 d8 d8)
+
+			d16-> g d\> d\!
+			g\< d\! g8->
+			\fla d8 \ra d8
+			(#5 d4)
 		}
 		\break
 
-		\mark \markup { \italic "4 fois" }
-		\repeat volta 4 {
-			\fla d8 d16 g
-			d8-> \ra d (#5 d) d16 g
-			\ra d4 (#9 d16) g d g
-			d8-> g
-			\ra d4 (#9 d)
+		\mark \markup { \bold "B " \italic "(2 fois)" }
+		\repeat volta 2 {
+			\fla d8 \ra d8
+			(#5 d8) d16\< g
+			d g\! d8->
+			r8 \ra d8
+			(#13 d4
+			d8.) d16
+			d8 g
+			d16-> g d d
+			\break
+
+			g8 \ra d8
+			(#5 d8) d16\< g
+			d g\! d8->
+			r8 g
+
+			d16 d g8
+			\fla d8. g16
+			\ra d4
+			(#9 d4)
 		}
-		\break
 	}
 }
