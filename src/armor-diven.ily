@@ -1,10 +1,10 @@
-% LilypondScores
+% LilypondScores:archived
 \version "2.18.2"
 
 \include "src/core.ily"
 
 \header {
-	title = "The Water is Wide - Armor Diven"
+	title = "The Water is Wide - Ar Mor Divent"
 	instrument = "Caisses Claires"
 	composer = "Christophe Declercq"
 	tagline = ##f
