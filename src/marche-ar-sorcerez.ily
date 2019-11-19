@@ -87,7 +87,7 @@
 		\tuplet 6/4 { \ra d8. (#7 g16) d g }
 
 		\tuplet 6/4 { \fla d8 g16 d g d }
-		\fla g8 g8
+		\fla g8. g16
 		\ra d4
 		(#13 d8) g8
 
@@ -95,7 +95,7 @@
 
 		\ra d4
 		(#13 d8) g8
-		\tuplet 8/4 { d16\< g d g d g d g }
+		d32\< g d g d g d g
 		d8\! g8
 
 		\ra d4
