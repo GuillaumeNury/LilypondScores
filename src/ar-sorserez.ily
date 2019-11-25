@@ -6,14 +6,27 @@
 \header {
 	title = \markup { \fontsize #4 \bold "Ar Sorserez" }
 	subtitle = \markup {
-		\fontsize #-1 "Marche inspirée de la Gwerz traditionnelle \"Ar Soserez\", chantée par les soeurs Goadec"
+		\center-column {
+			\null
+			\line {
+				\fontsize #-1 "Marche inspirée de la Gwerz traditionnelle \"Ar Soserez\", chantée par les soeurs Goadec"
+			}
+			\line { \fontsize #-2 "Arrangement : Ronan JEGO-AQUILINA" }
+		}
 	}
-	subsubtitle = "Arrangement : Ronan JEGO-AQUILINA"
-	instrument = "Caisses Claires"
+	instrument = \markup {
+		\column {
+			\null
+			\null
+			\line { "Partition pour caisses claires (AABB)" }
+		}
+	}
 	composer = \markup {
 		\column {
-			\line { \null }
-			\line { \null }
+			\null
+			\null
+			\null
+			\null
 			\line { "Composition pour la Caise Claire :" }
 			\line { "Aurélien Étienne / Guillaume Nury" }
 		}
