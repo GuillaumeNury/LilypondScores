@@ -9,7 +9,7 @@
 		\center-column {
 			\null
 			\line {
-				\fontsize #-1 "Marche inspirée de la Gwerz traditionnelle \"Ar Soserez\", chantée par les soeurs Goadec"
+				\fontsize #-1 "Marche inspirée de la Gwerz traditionnelle \"Ar Sorserez\", chantée par les soeurs Goadec"
 			}
 			\line { \fontsize #-2 "Arrangement : Ronan JEGO-AQUILINA" }
 		}
@@ -18,7 +18,7 @@
 		\column {
 			\null
 			\null
-			\line { "Partition pour caisses claires (AABB)" }
+			\line { "PARTITION POUR CAISSES CLAIRES" }
 		}
 	}
 	composer = \markup {
@@ -38,7 +38,7 @@
 
 
 \new DrumStaff {
-	\tempo 4 = 80 % BPM
+	\tempo 4 = 80
 	\drummode {
 		\time 4/4
 		\mark \default
