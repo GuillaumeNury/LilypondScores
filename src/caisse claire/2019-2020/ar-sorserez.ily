@@ -1,7 +1,7 @@
-% LilypondScores:draft
+% LilypondScores
 \version "2.18.2"
 
-\include "src/core.ily"
+\include "src/caisse claire/core.ily"
 
 \header {
 	title = \markup { \fontsize #4 \bold "Ar Sorserez" }

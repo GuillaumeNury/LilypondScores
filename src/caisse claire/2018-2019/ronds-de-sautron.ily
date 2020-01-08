@@ -1,7 +1,7 @@
 % LilypondScores
 \version "2.18.2"
 
-\include "src/core.ily"
+\include "src/caisse claire/core.ily"
 
 \header {
 	title = "Ronds de Sautron"
@@ -14,8 +14,8 @@
 \new DrumStaff {
 	\drummode {
 		\mark \default
-		\include "src/ronds-de-sautron/theme_a.ily"
+		\include "ronds-de-sautron/theme_a.ily"
 		\mark \default
-		\include "src/ronds-de-sautron/theme_b.ily"
+		\include "ronds-de-sautron/theme_b.ily"
 	}
 }

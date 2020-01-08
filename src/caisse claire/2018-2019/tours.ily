@@ -1,7 +1,7 @@
 % LilypondScores
 \version "2.18.2"
 
-\include "src/core.ily"
+\include "src/caisse claire/core.ily"
 
 \header {
 	title = "Tours"
@@ -14,10 +14,10 @@
 	\drummode {
 		\time 2/4
 		\mark "Thème A"
-		\include "src/tours/theme_a.ily"
+		\include "tours/theme_a.ily"
 		\mark "Thème B"
-		\include "src/tours/theme_b.ily"
+		\include "tours/theme_b.ily"
 		\mark "Thème C"
-		\include "src/tours/theme_c.ily"
+		\include "tours/theme_c.ily"
 	}
 }

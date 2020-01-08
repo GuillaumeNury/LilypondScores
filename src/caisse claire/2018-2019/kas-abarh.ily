@@ -1,7 +1,7 @@
 % LilypondScores
 \version "2.18.2"
 
-\include "src/core.ily"
+\include "src/caisse claire/core.ily"
 
 \header {
 	title = "Kas Abarh"
@@ -15,9 +15,9 @@
 	\drummode {
 		\mark \default
 		\time 2/4
-		\include "src/kas-abarh/theme_a.ily"
+		\include "kas-abarh/theme_a.ily"
 
 		\mark \default
-		\include "src/kas-abarh/theme_b.ily"
+		\include "kas-abarh/theme_b.ily"
 	}
 }

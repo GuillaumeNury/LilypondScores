@@ -1,7 +1,7 @@
 % LilypondScores
 \version "2.18.2"
 
-\include "src/core.ily"
+\include "src/caisse claire/core.ily"
 
 \header {
 	title = "Evit Mont d’an Iliz"
@@ -14,12 +14,12 @@
 	\drummode {
 		\time 4/4
 		\mark \default
-		\include "src/evit-mont-d-an-iliz/theme_a.ily"
+		\include "evit-mont-d-an-iliz/theme_a.ily"
 
 		\mark \default
-		\include "src/evit-mont-d-an-iliz/theme_b.ily"
+		\include "evit-mont-d-an-iliz/theme_b.ily"
 
 		\mark "Fin"
-		\include "src/evit-mont-d-an-iliz/fin.ily"
+		\include "evit-mont-d-an-iliz/fin.ily"
 	}
 }

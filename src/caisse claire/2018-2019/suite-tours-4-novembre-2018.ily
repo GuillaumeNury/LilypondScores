@@ -1,7 +1,7 @@
-% LilypondScores
+% LilypondScores:archived
 \version "2.18.2"
 
-\include "src/core.ily"
+\include "src/caisse claire/core.ily"
 
 \header {
 	title = "Suite Tours (4 novembre 2018)"
@@ -16,38 +16,38 @@
 		\mark "Percu"
 		\repeat unfold 8 {
 			\repeat unfold 2 {
-				\include "src/core/rythme_percu.ily"
+				\include "core/rythme_percu.ily"
 			}
 			\break
 		}
 		\mark "A"
-		\include "src/tours/theme_a.ily"
+		\include "tours/theme_a.ily"
 		\mark "B"
-		\include "src/tours/theme_b.ily"
+		\include "tours/theme_b.ily"
 		\mark "Pause"
 		r2 r2 r2 r2
 		\break
 		\mark "C"
-		\include "src/tours/theme_c.ily"
+		\include "tours/theme_c.ily"
 		\mark "B"
-		\include "src/tours/theme_b.ily"
+		\include "tours/theme_b.ily"
 		\mark "Percu"
 		\repeat unfold 4 {
 			\repeat unfold 2 {
-				\include "src/core/rythme_percu.ily"
+				\include "core/rythme_percu.ily"
 			}
 			\break
 		}
 		\mark "Fût"
-		\include "src/core/intro_fut.ily"
+		\include "core/intro_fut.ily"
 		\mark "Chant"
 		r2 r2 r2 r2
 		\break
 		\mark "Fût"
-		\include "src/core/intro_fut.ily"
+		\include "core/intro_fut.ily"
 		\mark "A"
-		\include "src/tours/theme_a.ily"
+		\include "tours/theme_a.ily"
 		\mark "B"
-		\include "src/tours/theme_b.ily"
+		\include "tours/theme_b.ily"
 	}
 }
