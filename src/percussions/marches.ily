@@ -2,7 +2,7 @@
 \version "2.18.2"
 
 \header {
-	title = \markup { \fontsize #4 \bold "Percus - Marches Orvez" }
+	title = \markup { \fontsize #4 \bold "Marches Orvez" }
 	instrument = "Tom + Wood blocks"
 	composer = "Guillaume Nury / Christophe Declercq"
 	tagline = ##f
