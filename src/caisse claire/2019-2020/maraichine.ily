@@ -52,7 +52,7 @@
 
 
 		\fla g8[ r8 g8]
-		\tuplet 4/6 { \fla d8. d16 }
+		\tuplet 4/6 { \drag d8. d16 }
 		\ra d4.\<
 		(#9 d8\![) r8 g8]
 
