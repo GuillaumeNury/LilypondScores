@@ -52,21 +52,21 @@
 
 
 		\fla g8[ r8 g8]
-		\tuplet 4/6 { \drag d8. d16 }
+		\tuplet 4/6 { \drag d16 d8. }
 		\ra d4.\<
 		(#9 d8\![) r8 g8]
 
 		\break
 
-		\fla d8[ r8 g16 d32\pp d32]
-		g8[ d8 \fla g8]
-		\ra g8[-> (#6 d8 d8]->)
+		\fla d4.
+		\grace { g16[ d d] } g8[ d8 \fla g8]
+		\ra g8[\v (#6 d8 d8]->)
 		g8[ d8 \fla g8]
 
-		\ra d8->[ (#6 g8 \ra g8->])
-		(#0 \ra d8[ (#6 d8->)) \ra g8]->
+		\ra d8\v[ (#6 g8 \ra g8\v])
+		(#0 \ra d8[ (#6 d8->)) \ra g8]\v
 		(#4 \ra g4.->)
-		(#8 g4.->)
+		(#8 g4.\v)
 
 		\break
 
@@ -78,20 +78,21 @@
 
 		d16\< g d g d8\!->
 		g8[ d8 \fla g8]
-		\fla d8[ r8 g8]
+		\fla d8[-> r8 g8]
 		\ra d4.\< (#9
 		
 		\break
 
 		d4.\!->)
+		\grace { g16[ d d] } 
 		g8[ d8 \fla g8]
-		\ra g8[-> (#6 d8 d8]->)
+		\ra g8[\v (#6 d8 d8]->)
 		g8[ d8 \fla g8]
 
-		\ra d8->[ (#6 g8 \ra g8->])
-		(#0 \ra d8[ (#6 d8->)) \ra g8]->
+		\ra d8\v[ (#6 g8 \ra g8\v])
+		(#0 \ra d8[ (#6 d8->)) \ra g8]\v
 		(#4 \ra g4.->)
-		(#8 g4.->)
+		(#8 g4.\v)
 
 		\bar ":|."
 	}
@@ -109,7 +110,7 @@
 		d16\< g d g\!
 		d8-> \ra d8
 
-		(#5 d8[->) \ra g8->]
+		(#5 d8[->) \ra g8\v]
 		(#6 d8[ d8]->)
 		g16\< d d g\!
 		d8-> g
@@ -126,7 +127,7 @@
 		\bar ".|:"
 
 		d16-> g d g
-		\fla d8 d16 g
+		\drag d8 d16 g
 		d16 g d8->
 		g8 \fla d8
 
@@ -138,7 +139,7 @@
 		\break
 
 		d16-> g d g
-		\fla d8 d16 g
+		\drag d8 d16 g
 		d16 g d8->
 		g8 \fla d8
 
@@ -154,7 +155,7 @@
 		d8[ g]->
 		d8[ \fla g8]
 
-		d8 \fla d8
+		d8[ \drag d8]
 		d16\pp g d g
 		d16\< g d g\!
 		d8-> g
@@ -162,7 +163,7 @@
 		\break
 
 		\fla d8 g->
-		d8 \fla g16 g->
+		d8 \fla g16-> g
 		d8[ g->]
 		d8[ g->]
 
@@ -172,5 +173,9 @@
 		r4
 
 		\bar ":|."
+
+		\time 2/4
+		\fla d4
+		r4
 	}
 }
