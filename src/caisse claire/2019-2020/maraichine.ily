@@ -37,7 +37,7 @@
 }
 
 \new DrumStaff {
-	\tempo 4 = 126
+	\tempo 4. = 126
 
 	\drummode {
 		\time 12/8
@@ -99,6 +99,8 @@
 }
 
 \new DrumStaff {
+	\tempo 4 = 126
+
 	\drummode {
 		\mark "B"
 		\time 4/4
@@ -120,6 +122,8 @@
 }
 
 \new DrumStaff {
+	\tempo 4 = 126
+
 	\drummode {
 		\mark "D"
 		\time 4/4
@@ -129,9 +133,9 @@
 		d16-> g d g
 		\drag d8 d16 g
 		d16 g d8->
-		g8 \fla d8
+		g8 \fla d8->
 
-		g8 \fla d8
+		g8 \fla d8->
 		d16\< g d g
 		d16 g d g\!
 		d8-> g
@@ -141,19 +145,19 @@
 		d16-> g d g
 		\drag d8 d16 g
 		d16 g d8->
-		g8 \fla d8
+		g8 \fla d8->
 
-		g8 \fla d8
+		g8 \fla d8->
 		d16 g d g
 		\ra d4->\>
 		(#6 g4\!)
 
 		\break
 
-		\fla d8 g
+		\fla d8-> g
 		d8 \fla g16 g
 		d8[ g]->
-		d8[ \fla g8]
+		d8[ \fla g8->]
 
 		d8[ \drag d8]
 		d16\pp g d g
@@ -162,14 +166,14 @@
 
 		\break
 
-		\fla d8 g->
-		d8 \fla g16-> g
+		\fla d8 g
+		d8 \fla g16 g
 		d8[ g->]
 		d8[ g->]
 
 		\ra d4
 		(#9 d16\<) g16 d g\!
-		\ra d8-> (#4 d16->) g16
+		\ra d8-> (#4 d16->) g16->
 		r4
 
 		\bar ":|."
