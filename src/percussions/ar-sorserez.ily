@@ -4,7 +4,7 @@
 % http://lilypond.org/doc/v2.19/Documentation/notation/common-notation-for-percussion
 
 \header {
-	title = \markup { \fontsize #4 \bold "Ar Sorserez" }
+	title = \markup { \fontsize #4 \bold "Ar Sorserez (Marie)" }
 	instrument = "Toms + Cymbales"
 	composer = "Christophe Declercq"
 	tagline = ##f
