@@ -10,13 +10,11 @@
 	tagline = ##f
 }
 
+\include "core.ily"
+
 \new DrumStaff {
 	\drummode {
-		#(define mydrums '((hihat cross #f 2)))
-		\override Staff.StaffSymbol.line-positions = #'( 0 )
-		\override Staff.BarLine.bar-extent = #'(-1.5 . 1.5)
-		\override Stem.direction = #1
-		\set DrumStaff.drumStyleTable = #(alist->hash-table mydrums)
+		\hithatstyle
 		\set DrumStaff.instrumentName = #"Cymbale"
 		\repeat volta 2 {
 			\mark \markup { \box \bold "Intro percus" }
@@ -51,10 +49,7 @@
 
 \new DrumStaff {
 	\drummode {
-		#(define mydrums '((tambourine default #t 0)))
-		\override Staff.StaffSymbol.line-positions = #'( 0 )
-		\override Staff.BarLine.bar-extent = #'(-1.5 . 1.5)
-		\set DrumStaff.drumStyleTable = #(alist->hash-table mydrums)
+		\tambourinestyle
 		\set DrumStaff.instrumentName = #"Tom"
 		\repeat volta 8 {
 			\mark \markup { \box \bold "A1" }
@@ -76,10 +71,7 @@
 }
 \new DrumStaff {
 	\drummode {
-		#(define mydrums '((tambourine default #t 0)))
-		\override Staff.StaffSymbol.line-positions = #'( 0 )
-		\override Staff.BarLine.bar-extent = #'(-1.5 . 1.5)
-		\set DrumStaff.drumStyleTable = #(alist->hash-table mydrums)
+		\tambourinestyle
 		\set DrumStaff.instrumentName = #"Tom"
 		\repeat volta 8 {
 			\mark \markup { \box \bold "A2" }
@@ -101,10 +93,7 @@
 }
 \new DrumStaff {
 	\drummode {
-		#(define mydrums '((tambourine default #t 0)))
-		\override Staff.StaffSymbol.line-positions = #'( 0 )
-		\override Staff.BarLine.bar-extent = #'(-1.5 . 1.5)
-		\set DrumStaff.drumStyleTable = #(alist->hash-table mydrums)
+		\tambourinestyle
 		\set DrumStaff.instrumentName = #"Bidon"
 		\repeat volta 8 {
 			\mark \markup { \box \bold "B1" }
@@ -127,11 +116,8 @@
 }
 \new DrumStaff {
 	\drummode {
-		#(define mydrums '((tambourine default #t 0)))
-		\override Staff.StaffSymbol.line-positions = #'( 0 )
-		\override Staff.BarLine.bar-extent = #'(-1.5 . 1.5)
-		\set DrumStaff.drumStyleTable = #(alist->hash-table mydrums)
-		\set DrumStaff.instrumentName = #"Tom"
+		\tambourinestyle
+		\set DrumStaff.instrumentName = #"Bidon"
 		\repeat volta 8 {
 			\mark \markup { \box \bold "B2" }
 			\time 4/4
@@ -144,10 +130,7 @@
 }
 \new DrumStaff {
 	\drummode {
-		#(define mydrums '((tambourine default #t 0)))
-		\override Staff.StaffSymbol.line-positions = #'( 0 )
-		\override Staff.BarLine.bar-extent = #'(-1.5 . 1.5)
-		\set DrumStaff.drumStyleTable = #(alist->hash-table mydrums)
+		\tambourinestyle
 		\set DrumStaff.instrumentName = #"Tom"
 		\repeat volta 8 {
 			\mark \markup { \box \bold "C" }
@@ -161,10 +144,7 @@
 }
 \new DrumStaff {
 	\drummode {
-		#(define mydrums '((tambourine default #t 0)))
-		\override Staff.StaffSymbol.line-positions = #'( 0 )
-		\override Staff.BarLine.bar-extent = #'(-1.5 . 1.5)
-		\set DrumStaff.drumStyleTable = #(alist->hash-table mydrums)
+		\tambourinestyle
 		\set DrumStaff.instrumentName = #"Tom"
 		\repeat volta 4 {
 			\mark \markup { \box \bold "D1" }
@@ -186,10 +166,7 @@
 }
 \new DrumStaff {
 	\drummode {
-		#(define mydrums '((tambourine default #t 0)))
-		\override Staff.StaffSymbol.line-positions = #'( 0 )
-		\override Staff.BarLine.bar-extent = #'(-1.5 . 1.5)
-		\set DrumStaff.drumStyleTable = #(alist->hash-table mydrums)
+		\tambourinestyle
 		\set DrumStaff.instrumentName = #"Tom"
 		\repeat volta 4 {
 			\mark \markup { \box \bold "D2" }
