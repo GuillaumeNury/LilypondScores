@@ -3,7 +3,7 @@
 
 % http://lilypond.org/doc/v2.19/Documentation/notation/common-notation-for-percussion
 \header {
-	title = \markup { \fontsize #4 \bold "Suite de Maraîchines (Jacqueline)" }
+	title = \markup { \fontsize #3 "Suite de Maraîchines (Jacqueline)" }
 	instrument = "Wood Blocks + Bidon"
 	composer = "Ronan Jego-Aquilina"
 	tagline = ##f
