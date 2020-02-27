@@ -41,6 +41,55 @@
 
 	\drummode {
 		\time 12/8
+		\mark "Intro"
+
+		\fla d4.
+		d8 g d
+		\fla g4 \fla d8
+		r4 g8
+
+		\fla g4.
+		\ra d8[-> (#4 r8 \ra d8]\v)
+		(#0 \ra g8[ (#6 r8 g8]))
+		\ra d4.
+
+		(#7 g4.)
+		d8 g d
+		\fla g4 \fla d8
+		r4 g8
+
+		\fla g4.
+		\ra d8[-> (#4 r8 \ra d8]\v)
+		(#0 \ra g8[ (#6 r8 g8]))
+		\ra d4.
+
+		(#7 g4.)
+		\ra d4.
+		(#7 \ra g4.->)
+		(#6 \ra d4.->)
+
+		(#6 g4.->)
+		\fla d8 g8 \fla d8
+		g8 d8 \fla g8
+		\tuplet 4/6 { d16\< g d g\! }
+
+		d4.
+		\ra d4.
+		(#7 \ra g4.->)
+		(#6 \ra d4.->)
+
+		(#6 g4.->)
+		\fla d8 g8 \fla d8
+		g8 d8 \fla g8
+		\tuplet 4/6 { d16\< g d g\! }
+	}
+}
+
+\new DrumStaff {
+	\tempo 4. = 126
+
+	\drummode {
+		\time 12/8
 		\mark "A"
 
 		\bar ".|:"
