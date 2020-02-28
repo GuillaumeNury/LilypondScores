@@ -36,7 +36,21 @@
 	}
 }
 
+\paper {
+	score-system-spacing #'padding = #8
+}
+
+\layout {
+	\override Score.RehearsalMark.font-size = 3
+	\override Score.RehearsalMark.font-series = #'bold
+	\override Score.RehearsalMark.extra-offset = #'(0 . 3)
+	\override Score.MetronomeMark.extra-offset = #'(-3 . 3)
+	\override Score.MetronomeMark.break-align-symbols = #'(RehearsalMark)
+}
+
 \new DrumStaff {
+	\once \override Score.MetronomeMark.extra-offset = #'(3 . 3)
+	\once \override Score.RehearsalMark.extra-offset = #'(2 . 3)
 	\tempo 4. = 126
 
 	\drummode {
@@ -48,7 +62,7 @@
 		\fla g4 \fla d8
 		r4 g8
 
-		\fla g4.
+		\fla d4.
 		\ra d8[-> (#4 r8 \ra d8]\v)
 		(#0 \ra g8[ (#6 r8 g8]))
 		\ra d4.
@@ -58,7 +72,7 @@
 		\fla g4 \fla d8
 		r4 g8
 
-		\fla g4.
+		\fla d4.
 		\ra d8[-> (#4 r8 \ra d8]\v)
 		(#0 \ra g8[ (#6 r8 g8]))
 		\ra d4.
@@ -73,7 +87,7 @@
 		g8 d8 \fla g8
 		\tuplet 4/6 { d16\< g d g\! }
 
-		d4.
+		d8 g8 r8
 		\ra d4.
 		(#7 \ra g4.->)
 		(#6 \ra d4.->)
@@ -86,6 +100,9 @@
 }
 
 \new DrumStaff {
+	\once \override Score.RehearsalMark.extra-offset = #'(0 . 4)
+	\once \override Score.MetronomeMark.extra-offset = #'(-3 . 1.5)
+
 	\tempo 4. = 126
 
 	\drummode {
@@ -94,11 +111,19 @@
 
 		\bar ".|:"
 		% Phrase A-1
+		\set Score.repeatCommands = #'((volta "1"))
+		d8[ r8 \ra d8]
+		(#5 d4.)
+		\fla g8[ r8 g8]
+		\fla d8-> g8 d8
+		\set Score.repeatCommands = #'((volta #f))
+
+		\set Score.repeatCommands = #'((volta "2"))
 		\fla d8[ r8 \ra d8]
 		(#5 d4.)
 		\fla g8[ r8 g8]
 		\fla d8-> g8 d8
-
+		\set Score.repeatCommands = #'((volta #f))
 
 		\fla g8[ r8 g8]
 		\tuplet 4/6 { \drag d16 d8. }
