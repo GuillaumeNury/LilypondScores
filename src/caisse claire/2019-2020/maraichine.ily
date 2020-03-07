@@ -178,20 +178,72 @@
 	\drummode {
 		\mark "B"
 		\time 4/4
-
 		\bar ".|:"
 
-		\fla d8 d16 g
-		d8 \fla g8
-		d16\< g d g\!
-		d8-> \ra d8
+		% Reprises seulement
+		\repeat volta 2 {
+			\fla d4
+			r8 \fla g8
+			d16\< g d g\!
+			d4->
 
-		(#5 d8[->) \ra g8\v]
-		(#6 d8[ d8]->)
-		g16\< d d g\!
-		d8-> g
+			r8 \ra g8\v]
+			(#6 d8[ d8]->)
+			g16\< d d g\!
+			d4->
+		}
 
-		\bar ":|."
+		% Reprises + leader
+		\break
+
+		\repeat volta 2 {
+			\fla d8-\rn d16 g
+			d8 \fla g8\dr
+			d16\< g d g\!
+			d8->\fr \ra d8
+
+			(#5 d8[->) \ra g8\v\dr]
+			(#6 d8[ d8]->)
+			g16\< d d g\!
+			d8->\fr g
+		}
+
+		% Tout
+		\break
+
+		\repeat volta 2 {
+			\fla d8 d16 g
+			d8 \fla g8
+			d16\< g d g\!
+			d8-> \ra d8
+
+			(#5 d8[->) \ra g8\v]
+			(#6 d8[ d8]->)
+			g16\< d d g\!
+			d8-> g
+		}
+
+		% Flip flap
+		\break
+
+		\repeat volta 2 {
+			\circle \xNote d8 d16 g
+			d8 \circle \xNote g8
+			d16\< g d g\!
+			\circle \xNote d8 \ra d8
+
+			(#5 d8[->) \ra g8\v]
+			(#6 d8[ d8]->)
+			g16\< d d g\!
+		}
+		\alternative {
+			{
+				\circle \xNote d8 g
+			}
+			{
+				\circle \xNote d4
+			}
+		}
 	}
 }
 
@@ -247,13 +299,14 @@
 
 		\ra d4
 		(#9 d16\<) g16 d g\!
-		\ra d8-> (#4 d16->) g16->
-		r4
+		\triolet { d16 g16 d8 d8 }
+		g4
 
 		\bar ":|."
 
-		\time 2/4
+		\fla d8-> g
+		d8 \fla g16 g
+		d8[ g]->
 		\fla d4
-		r4
 	}
 }

@@ -1,5 +1,6 @@
 %{
 	SOURCE : https://simonfroger.wordpress.com/lilypond/caisse-claire-ecossaise/
+	ET : http://lsr.di.unimi.it/LSR/Snippet?id=970
 
 	Configuration d'un fichier LilyPond pour l'écriture d'une partition de
 	caisse claire écossaise.
@@ -78,7 +79,7 @@ drumPitchNames
 	% Les hampes se poussent devant les n° de RA
 	% il faudra faire précéder un \markup par \textLengthOff 
 	\textLengthOn
-	
+
 	% indications de nuances en haut
 	\dynamicUp
 	% On assigne à la partition le mode précédemment défini :
@@ -132,7 +133,7 @@ startGraceMusic = {
 	\once \override Beam.positions = #'(3 . 3)	% position des ligatures pour les drag
 	\once \override DrumStaff.Stem.length = #7	% position des extrémités des hampes
 }
-stopGraceMusic =  {
+stopGraceMusic =	{
 	%\override Beam.positions = #'(-6 . -6)
 	\revert Flag.stroke-style
 	%\revert DrumStaff.Stem.length
@@ -141,7 +142,7 @@ stopGraceMusic =  {
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%     FONCTIONS SPÉCIALES      %%%%%%%
+%%	 FONCTIONS SPÉCIALES	%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % TRIOLETS & QUINTOLETS :
@@ -161,7 +162,7 @@ quintolet = #(define-music-function
 
 % NUANCES :
 v = #(define-event-function (parser location) ()
-  #{ \upbow #}
+	#{ \upbow #}
 )
 
 % NUANCE AVEC LIGNE D'EXTENSION :
@@ -183,12 +184,20 @@ dynLine = #(define-music-function (parser location text)
 % CROCHETS DE REPRISE :
 % Début :
 dr = #(define-event-function (parser location) ()
-      	#{ \startGroup #}
-      	)
+			#{ \startGroup #}
+			)
 % Fin :
 fr = #(define-event-function (parser location) ()
-      	#{ \stopGroup #}
-      	)
+			#{ \stopGroup #}
+			)
+
+% On one single note :
+rn = \markup \lower #4 \halign #1 {
+	\path #0.1 #'((moveto 0 1)
+		(lineto 0 0)
+		(lineto 2 0)
+		(lineto 2 1))
+}
 
 
 % FLAS et DRAGS :
@@ -196,24 +205,24 @@ fla = #(define-music-function (parser location myNote)
 	(ly:music?)
 	(define test
 		(filter
-		       (lambda(m) (= (ly:music-property m 'span-direction 0) -1))
-		       (extract-named-music myNote '(NoteGroupingEvent))
+				(lambda(m) (= (ly:music-property m 'span-direction 0) -1))
+				(extract-named-music myNote '(NoteGroupingEvent))
 		)
 	)
 	(if (not (null? test))
 		(music-filter
 			(lambda (event) (not (member (ly:music-property event 'name) '(NoteGroupingEvent))))
-			 myNote
+			myNote
 		)
 	)
 	(if (eq? (ly:music-property myNote 'drum-type) 'main-droite)
-	    (if (null? test)
+		(if (null? test)
 			#{ \drummode { \grace g8 #myNote } #}	
 			#{ \drummode { \grace g8\startGroup #myNote } #}
 		)
-	    (if (null? test)
-		    #{ \drummode { \grace d8 #myNote } #}
-		    #{ \drummode { \grace d8\startGroup #myNote } #}
+		(if (null? test)
+			#{ \drummode { \grace d8 #myNote } #}
+			#{ \drummode { \grace d8\startGroup #myNote } #}
 		)
 	)
 )
@@ -222,22 +231,22 @@ drag = #(define-music-function (parser location myNote)
 	(ly:music?)
 	(define test
 		(filter
-		       (lambda(m) (= (ly:music-property m 'span-direction 0) -1))
-		       (extract-named-music myNote '(NoteGroupingEvent))
+			(lambda(m) (= (ly:music-property m 'span-direction 0) -1))
+			(extract-named-music myNote '(NoteGroupingEvent))
 		)
 	)
 	(if (not (null? test))
 		(music-filter
 			(lambda (event) (not (member (ly:music-property event 'name) '(NoteGroupingEvent))))
-			 myNote
+			myNote
 		)
 	)
 	(if (eq? (ly:music-property myNote 'drum-type) 'main-droite)
-	    (if (null? test)
+		(if (null? test)
 			#{ \drummode { \grace { g16[ g] } #myNote } #}
 			#{ \drummode { \grace { g16[\startGroup g] } #myNote } #}
 		)
-	    (if (null? test)
+		(if (null? test)
 			#{ \drummode { \grace { d16[ d] } #myNote } #}
 			#{ \drummode { \grace { d16[\startGroup d] } #myNote } #}
 		)
@@ -251,27 +260,27 @@ ra = #(define-music-function
 	(ly:music? number?)
 	(define myCoef (ly:duration-log (ly:music-property myNote 'duration)))
 	(set! (ly:music-property myNote 'articulations)
-        (cons (make-music 'TremoloEvent 'tremolo-type 
-                   (* (if (> 8 myRa) 4 8) (expt 2 (if (= 1 myCoef) 2 myCoef)))
-              )
-              (ly:music-property myNote 'articulations)
-        )
-    )
+		(cons (make-music 'TremoloEvent 'tremolo-type 
+					(* (if (> 8 myRa) 4 8) (expt 2 (if (= 1 myCoef) 2 myCoef)))
+				)
+				(ly:music-property myNote 'articulations)
+		)
+	)
 	(if (< 0 myRa)
 		(set! (ly:music-property myNote 'articulations)
-		      (cons (make-music 'TextScriptEvent 'direction -1 'text (number->string myRa))
-			      (ly:music-property myNote 'articulations)
-			  )
-	    )
+				(cons (make-music 'TextScriptEvent 'direction -1 'text (number->string myRa))
+					(ly:music-property myNote 'articulations)
+				)
+		)
 	)
 	myNote
 )
 
 % DIVISION DES LIGATURES :
 divLig = #(define-music-function (parser location) ()
-    #{
-    	\set subdivideBeams = ##t
+	#{
+		\set subdivideBeams = ##t
 		\set baseMoment = #(ly:make-moment 1 8)
 		\set beatStructure = #'(2 2 2 2 2)
-    #}
+	#}
 )
