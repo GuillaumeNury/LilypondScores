@@ -1,4 +1,4 @@
-% LilypondScores:draft
+% LilypondScores
 \version "2.18.2"
 
 \include "src/caisse claire/core.ily"
@@ -78,6 +78,16 @@
 		\ra d4.
 
 		(#7 g4.)
+		\ra d4.\<
+		(#7 \ra g4.->)
+		(#6 \ra d4.->)
+
+		(#6 g4.\!->)
+		\fla d8 g8 \fla d8
+		g8 d8 \fla g8
+		d16\< g d g d8\!
+
+		g4.
 		\ra d4.
 		(#7 \ra g4.->)
 		(#6 \ra d4.->)
@@ -85,17 +95,9 @@
 		(#6 g4.->)
 		\fla d8 g8 \fla d8
 		g8 d8 \fla g8
-		\tuplet 4/6 { d16\< g d g\! }
+		d16\< g d g d8\!
 
-		d8 g8 r8
-		\ra d4.
-		(#7 \ra g4.->)
-		(#6 \ra d4.->)
-
-		(#6 g4.->)
-		\fla d8 g8 \fla d8
-		g8 d8 \fla g8
-		\tuplet 4/6 { d16\< g d g\! }
+		\bar "|."
 	}
 }
 
@@ -111,19 +113,10 @@
 
 		\bar ".|:"
 		% Phrase A-1
-		\set Score.repeatCommands = #'((volta "1"))
-		d8[ r8 \ra d8]
-		(#5 d4.)
-		\fla g8[ r8 g8]
-		\fla d8-> g8 d8
-		\set Score.repeatCommands = #'((volta #f))
-
-		\set Score.repeatCommands = #'((volta "2"))
 		\fla d8[ r8 \ra d8]
 		(#5 d4.)
 		\fla g8[ r8 g8]
 		\fla d8-> g8 d8
-		\set Score.repeatCommands = #'((volta #f))
 
 		\fla g8[ r8 g8]
 		\tuplet 4/6 { \drag d16 d8. }
@@ -244,6 +237,38 @@
 				\circle \xNote d4
 			}
 		}
+
+		r1
+		r1
+		r1
+		r1
+
+		r1
+		r1
+		r1
+		r1
+
+		\bar "|."
+	}
+}
+
+\new DrumStaff {
+	\tempo 4 = 126
+
+	\drummode {
+		\mark "C"
+		\time 4/4
+
+		\bar ".|:"
+		r1
+		r1
+		r1
+		r1
+		r1
+		r1
+		r1
+		r1
+		\bar ":|."
 	}
 }
 
@@ -258,7 +283,7 @@
 
 		d16-> g d g
 		\drag d8 d16 g
-		d16 g d8->
+		d16 g d8
 		g8 \fla d8->
 
 		g8 \fla d8->
@@ -270,7 +295,7 @@
 
 		d16-> g d g
 		\drag d8 d16 g
-		d16 g d8->
+		d16 g d8
 		g8 \fla d8->
 
 		g8 \fla d8->
@@ -286,8 +311,8 @@
 		d8[ \fla g8->]
 
 		d8[ \drag d8]
-		d16\pp g d g
-		d16\< g d g\!
+		d16\< g d g
+		d16 g d g\!
 		d8-> g
 
 		\break
@@ -306,7 +331,9 @@
 
 		\fla d8-> g
 		d8 \fla g16 g
-		d8[ g]->
+		d8 g
 		\fla d4
+
+		\bar "|."
 	}
 }
