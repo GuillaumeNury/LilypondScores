@@ -28,8 +28,8 @@
 
 			hihat4. 
 			r4.
-			r4.
-			r4.
+			hihat8 hihat8 hihat8
+			hihat4.
 
 			hihat4. 
 			r4.
@@ -38,7 +38,7 @@
 
 			hihat4. 
 			r4.
-			r4.
+			hihat8 hihat8 hihat8
 			hihat4.
 
 			\bar ":|."
@@ -117,7 +117,7 @@
 \new DrumStaff {
 	\drummode {
 		\tambourinestyle
-		\set DrumStaff.instrumentName = #"Bidon"
+		\set DrumStaff.instrumentName = #" "
 		\repeat volta 8 {
 			\mark \markup { \box \bold "B2" }
 			\time 4/4
@@ -131,7 +131,7 @@
 \new DrumStaff {
 	\drummode {
 		\tambourinestyle
-		\set DrumStaff.instrumentName = #"Tom"
+		\set DrumStaff.instrumentName = #" "
 		\repeat volta 8 {
 			\mark \markup { \box \bold "C" }
 			\time 4/4
@@ -146,11 +146,11 @@
 	\drummode {
 		\tambourinestyle
 		\set DrumStaff.instrumentName = #"Tom"
-		\repeat volta 4 {
+		\repeat volta 2 {
 			\mark \markup { \box \bold "D1" }
 			\time 4/4
 			\bar ".|:"
-			r4^\markup "x4"
+			r4^\markup "x2"
 			r4
 			r4
 			r4
@@ -167,13 +167,57 @@
 \new DrumStaff {
 	\drummode {
 		\tambourinestyle
+		\hithatstyle
+		\set DrumStaff.instrumentName = #"Tom+Cymb"
+			\repeat volta 2 {
+			\time 4/4
+			\bar ".|:"
+			r4^\markup "x2"
+			hihat4
+			r4
+			r4
+
+			tamb8 tamb8
+			tamb8. tamb16
+			tamb8 tamb8
+			tamb4
+			\bar ":|."
+			\break
+		}
+	}
+}
+\new DrumStaff {
+	\drummode {
+		\tambourinestyle
 		\set DrumStaff.instrumentName = #"Tom"
-		\repeat volta 4 {
+		\repeat volta 2 {
 			\mark \markup { \box \bold "D2" }
 			\time 4/4
 			\bar ".|:"
-			r4^\markup "x4"
+			r4^\markup "x2"
 			r4
+			r4
+			r4
+
+			tamb8 tamb8
+			tamb8. tamb16
+			tamb8 tamb8
+			tamb4
+			\bar ":|."
+			\break
+		}
+	}
+}
+\new DrumStaff {
+	\drummode {
+		\tambourinestyle
+		\hithatstyle
+		\set DrumStaff.instrumentName = #"Tom+Cymb"
+		\repeat volta 2 {
+			\time 4/4
+			\bar ".|:"
+			r4^\markup "x2"
+			hihat4
 			r4
 			r4
 

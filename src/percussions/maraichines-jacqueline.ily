@@ -91,7 +91,7 @@
 \new DrumStaff {
 	\drummode {
 		\tambourinestyle
-		\set DrumStaff.instrumentName = #"Bidon"
+		\set DrumStaff.instrumentName = #" "
 		\repeat volta 8 {
 			\mark \markup { \box \bold "B2" }
 			\time 4/4
@@ -119,17 +119,43 @@
 		\woodblockstyle
 		\set DrumStaff.instrumentName = #"Wood Blocks"
 		\mark \markup { \box \bold "D1" }
-		\repeat volta 4 {
+		\repeat volta 1 {
 			\time 4/4
-			\bar ".|:"
-			r4^\markup "x4" r4 r4 r4
+			\bar ".|"
+			r4 r4 r4 r4
+			r4 r4 r4 r4
+			r4 r4 r4 r4
+			r4 r4 r4 r4
+			\bar "|."
 		}
-		\repeat volta 4 {
-			\bar ":|.|:"
-			cb8^\markup "x4" rb8
+	}
+}
+\new DrumStaff {
+	\drummode {
+		\woodblockstyle
+		\set DrumStaff.instrumentName = #"Wood Blocks"
+		\repeat volta 1 {
+			\bar ".|"
+			cb8 rb8
 			cb8 rb16 rb16
 			rb4
 			r4
+
+			cb8 rb8
+			cb8 rb16 rb16
+			rb4
+			r4
+
+			cb8 rb8
+			cb8 rb16 rb16
+			rb4
+			r4
+
+			cb8 rb8
+			cb8 rb16 rb16
+			rb4
+			r4
+			\bar "|."
 		}
 	}
 }
@@ -138,22 +164,57 @@
 		\woodblockstyle
 		\set DrumStaff.instrumentName = #"Wood Blocks"
 		\mark \markup { \box \bold "D2" }
-		\repeat volta 4 {
+		\repeat volta 1 {
 			\time 4/4
-			\bar ".|:"
-			r4^\markup "x4" r4 r4 r4
+			\bar ".|"
+			r4 r4 r4 r4
+			r4 r4 r4 r4
+			r4 r4 r4 r4
+			r4 r4 r4 r4
+			\bar "|."
 		}
-		\repeat volta 4 {
-			\bar ":|.|:"
-			cb8^\markup "x4" rb8
+	}
+}
+\new DrumStaff {
+	\drummode {
+		\woodblockstyle
+		\set DrumStaff.instrumentName = #"Wood Blocks"
+		\repeat volta 1 {
+			\bar ".|"
+			cb8 rb8
 			cb8 rb16 rb16
 			rb4
 			r4
+
+			cb8 rb8
+			cb8 rb16 rb16
+			rb4
+			r4
+
+			cb8 rb8
+			cb8 rb16 rb16
+			rb4
+			r4
+
+			cb8 rb8
+			cb8 rb16 rb16
+			rb4
+			r4
+			\bar "|."
 		}
-		cb8 rb8
-		cb8 rb16 rb16
-		rb8 cb8
-		rb4
-		\bar "|."
+	}
+}
+\new DrumStaff {
+	\drummode {
+		\woodblockstyle
+		\set DrumStaff.instrumentName = #"Wood Blocks"
+		\repeat volta 1 {
+			\bar ".|"
+			cb8 rb8
+			cb8 rb16 rb16
+			rb8 cb8
+			rb4
+			\bar "|."
+		}
 	}
 }
