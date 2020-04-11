@@ -5,7 +5,7 @@
 
 \header {
 	title = "The Water is Wide - Ar Mor Divent"
-	instrument = "Caisses Claires"
+	instrument = "PARTITION POUR CAISSES CLAIRES"
 	composer = "Christophe Declercq"
 	tagline = ##f
 }

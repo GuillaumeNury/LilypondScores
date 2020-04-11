@@ -5,7 +5,7 @@
 
 \header {
 	title = "Marche Cayenne"
-	instrument = "Caisses Claires"
+	instrument = "PARTITION POUR CAISSES CLAIRES"
 	composer = "Aurélien Étienne / Guillaume Nury"
 	tagline = ##f
 }
@@ -14,7 +14,7 @@
 \new DrumStaff {
 	\drummode {
 		\time 4/4
-		\mark \default
+		\boxMark "A"
 
 		\repeat volta 2 {
 			\fla d8 \triolet { d16 d g }
@@ -27,11 +27,13 @@
 			\tuplet 7/4 { d16 g d d g d g }
 			\fla d4
 		}
+	}
+}
 
-		\break
-
+\new DrumStaff {
+	\drummode {
 		\time 4/4
-		\mark \default
+		\boxMark "B"
 		\repeat volta 2 {
 			\fla d16 d16 g8
 			\tuplet 7/4 { d16 g d d g d g }

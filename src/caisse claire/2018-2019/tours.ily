@@ -13,11 +13,21 @@
 \new DrumStaff {
 	\drummode {
 		\time 2/4
-		\mark "Thème A"
+		\boxMark "A"
 		\include "tours/theme_a.ily"
-		\mark "Thème B"
+	}
+}
+
+\new DrumStaff {
+	\drummode {
+		\boxMark "B"
 		\include "tours/theme_b.ily"
-		\mark "Thème C"
+	}
+}
+
+\new DrumStaff {
+	\drummode {
+		\boxMark "C"
 		\include "tours/theme_c.ily"
 	}
 }

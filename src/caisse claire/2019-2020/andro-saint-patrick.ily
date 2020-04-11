@@ -5,7 +5,7 @@
 
 \header {
 	title = "Andro Saint Patrick"
-	instrument = "Caisses Claires"
+	instrument = "PARTITION POUR CAISSES CLAIRES"
 	composer = "Yann Lemetayer"
 	tagline = ##f
 }
@@ -14,7 +14,7 @@
 \new DrumStaff {
 	\drummode {
 		\time 4/4
-		\mark \markup { \bold "A " \italic "(2 fois)" }
+		\boxMark "A"
 		\repeat volta 2 {
 			\fla d8 g16-> d
 			g g d8
@@ -36,9 +36,12 @@
 			\fla d8 \ra d8
 			(#5 d4)
 		}
-		\break
+	}
+}
 
-		\mark \markup { \bold "B " \italic "(2 fois)" }
+\new DrumStaff {
+	\drummode {
+		\boxMark "B"
 		\repeat volta 2 {
 			\fla d8 \ra d8
 			(#5 d8) d16\< g

@@ -5,7 +5,7 @@
 
 \header {
 	title = "Ronds de Sautron"
-	instrument = "Caisses Claires"
+	instrument = "PARTITION POUR CAISSES CLAIRES"
 	composer = "Aurélien Étienne"
 	tagline = ##f
 }
@@ -13,9 +13,14 @@
 
 \new DrumStaff {
 	\drummode {
-		\mark \default
+		\boxMark "A"
 		\include "ronds-de-sautron/theme_a.ily"
-		\mark \default
+	}
+}
+
+\new DrumStaff {
+	\drummode {
+		\boxMark "B"
 		\include "ronds-de-sautron/theme_b.ily"
 	}
 }

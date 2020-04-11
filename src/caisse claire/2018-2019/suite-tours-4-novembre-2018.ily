@@ -5,7 +5,7 @@
 
 \header {
 	title = "Suite Tours (4 novembre 2018)"
-	instrument = "Caisses Claires"
+	instrument = "PARTITION POUR CAISSES CLAIRES"
 	composer = "Aurélien Étienne / Guillaume Nury"
 	tagline = ##f
 }
@@ -13,41 +13,41 @@
 \new DrumStaff {
 	\drummode {
 		\time 2/4
-		\mark "Percu"
+		\boxMark "Percu"
 		\repeat unfold 8 {
 			\repeat unfold 2 {
 				\include "core/rythme_percu.ily"
 			}
 			\break
 		}
-		\mark "A"
+		\boxMark "A"
 		\include "tours/theme_a.ily"
-		\mark "B"
+		\boxMark "B"
 		\include "tours/theme_b.ily"
-		\mark "Pause"
+		\boxMark "Pause"
 		r2 r2 r2 r2
 		\break
-		\mark "C"
+		\boxMark "C"
 		\include "tours/theme_c.ily"
-		\mark "B"
+		\boxMark "B"
 		\include "tours/theme_b.ily"
-		\mark "Percu"
+		\boxMark "Percu"
 		\repeat unfold 4 {
 			\repeat unfold 2 {
 				\include "core/rythme_percu.ily"
 			}
 			\break
 		}
-		\mark "Fût"
+		\boxMark "Fût"
 		\include "core/intro_fut.ily"
-		\mark "Chant"
+		\boxMark "Chant"
 		r2 r2 r2 r2
 		\break
-		\mark "Fût"
+		\boxMark "Fût"
 		\include "core/intro_fut.ily"
-		\mark "A"
+		\boxMark "A"
 		\include "tours/theme_a.ily"
-		\mark "B"
+		\boxMark "B"
 		\include "tours/theme_b.ily"
 	}
 }

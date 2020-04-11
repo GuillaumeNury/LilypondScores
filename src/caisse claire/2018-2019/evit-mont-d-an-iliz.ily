@@ -5,7 +5,7 @@
 
 \header {
 	title = "Evit Mont d’an Iliz"
-	instrument = "Caisses Claires"
+	instrument = "PARTITION POUR CAISSES CLAIRES"
 	composer = "Aurélien Étienne"
 	tagline = ##f
 }
@@ -13,13 +13,20 @@
 \new DrumStaff {
 	\drummode {
 		\time 4/4
-		\mark \default
+		\boxMark "A"
 		\include "evit-mont-d-an-iliz/theme_a.ily"
-
-		\mark \default
+	}
+}
+\new DrumStaff {
+	\drummode {
+		\boxMark "B"
 		\include "evit-mont-d-an-iliz/theme_b.ily"
+	}
+}
 
-		\mark "Fin"
+\new DrumStaff {
+	\drummode {
+		\boxMark "Fin"
 		\include "evit-mont-d-an-iliz/fin.ily"
 	}
 }

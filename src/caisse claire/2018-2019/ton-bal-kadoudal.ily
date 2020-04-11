@@ -5,7 +5,7 @@
 
 \header {
 	title = "Ton Bal Kadoudal"
-	instrument = "Caisses Claires"
+	instrument = "PARTITION POUR CAISSES CLAIRES"
 	composer = "Christophe Declercq"
 	tagline = ##f
 }
@@ -14,7 +14,7 @@
 \new DrumStaff {
 	\drummode {
 		\time 2/4
-		\mark \default
+		\boxMark "A"
 		\repeat volta 2 {
 			\fla d4 d8. g16
 			\ra d4 (#9 d8) g16 g
@@ -28,8 +28,13 @@
 			\ra d4 (#9 d4)
 			\break
 		}
+	}
+}
 
-		\mark \default
+
+\new DrumStaff {
+	\drummode {
+		\boxMark "B"
 		\repeat volta 2 {
 			\fla d4 d8. g16
 			\ra d4 (#9 d8) g8

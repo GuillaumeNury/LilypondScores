@@ -5,7 +5,7 @@
 
 \header {
 	title = "Ça mousse - Superbus"
-	instrument = "Caisses Claires"
+	instrument = "PARTITION POUR CAISSES CLAIRES"
 	composer = "team Scotch-Brite"
 	tagline = ##f
 }

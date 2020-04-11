@@ -5,7 +5,7 @@
 
 \header {
 	title = "Marche Montagne"
-	instrument = "Caisses Claires"
+	instrument = "PARTITION POUR CAISSES CLAIRES"
 	composer = "Christophe Declercq"
 	tagline = ##f
 }
@@ -14,7 +14,7 @@
 	\drummode {
 		\time 2/4
 		\partial 8
-		\mark \default
+		\boxMark "A"
 		
 		g8
 
@@ -80,7 +80,7 @@
 		}
 
 		\time 2/4
-		\mark \default
+		\boxMark "B"
 
 		d8 d
 		g4

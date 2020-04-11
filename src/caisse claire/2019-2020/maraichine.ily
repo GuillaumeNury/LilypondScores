@@ -4,48 +4,12 @@
 \include "src/caisse claire/core.ily"
 
 \header {
-	title = \markup { \fontsize #4 \bold "Suite de Maraîchines" }
-	subtitle = \markup {
-		\center-column {
-			\null
-			\line {
-				\fontsize #-1 "Danse traditionnelle du Pays de Retz"
-			}
-			\line { \fontsize #-2 "Arrangement : Ronan JEGO-AQUILINA" }
-		}
-	}
-	instrument = \markup {
-		\column {
-			\null
-			\null
-			\line { "PARTITION POUR CAISSES CLAIRES" }
-		}
-	}
-	composer = \markup {
-		\column {
-			\null
-			\null
-			\null
-			\null
-			\line { "Composition pour la Caise Claire :" }
-			\line { "Alexandre Guiodo" }
-		}
-	}
-	tagline = \markup {
-		\fontsize #-4 "Thèmes traditionnels et d'inspiration traditionnelle"
-	}
-}
-
-\paper {
-	score-system-spacing #'padding = #8
-}
-
-\layout {
-	\override Score.RehearsalMark.font-size = 3
-	\override Score.RehearsalMark.font-series = #'bold
-	\override Score.RehearsalMark.extra-offset = #'(0 . 3)
-	\override Score.MetronomeMark.extra-offset = #'(-3 . 3)
-	\override Score.MetronomeMark.break-align-symbols = #'(RehearsalMark)
+	title = "Suite de Maraîchines"
+	subtitle = "Danse traditionnelle du Pays de Retz"
+	instrument = "PARTITION POUR CAISSES CLAIRES"
+	composer = "Alexandre Guiodo"
+	arranger = "Arrangement : Ronan JEGO-AQUILINA"
+	tagline = "Thèmes traditionnels et d'inspiration traditionnelle"
 }
 
 \new DrumStaff {
@@ -55,7 +19,7 @@
 
 	\drummode {
 		\time 12/8
-		\mark "Intro"
+		\boxMark "Intro"
 
 		\fla d4.
 		d8 g d
@@ -102,14 +66,11 @@
 }
 
 \new DrumStaff {
-	\once \override Score.RehearsalMark.extra-offset = #'(0 . 4)
-	\once \override Score.MetronomeMark.extra-offset = #'(-3 . 1.5)
-
 	\tempo 4. = 126
 
 	\drummode {
 		\time 12/8
-		\mark "A"
+		\boxMark "A"
 
 		\bar ".|:"
 		% Phrase A-1
@@ -169,7 +130,7 @@
 	\tempo 4 = 126
 
 	\drummode {
-		\mark "B"
+		\boxMark "B"
 		\time 4/4
 		\bar ".|:"
 
@@ -220,10 +181,10 @@
 		\break
 
 		\repeat volta 2 {
-			\circle \xNote d8 d16 g
-			d8 \circle \xNote g8
+			\flip d8 d16 g
+			d8 \flip g8
 			d16\< g d g\!
-			\circle \xNote d8 \ra d8
+			\flip d8 \ra d8
 
 			(#5 d8[->) \ra g8\v]
 			(#6 d8[ d8]->)
@@ -231,10 +192,10 @@
 		}
 		\alternative {
 			{
-				\circle \xNote d8 g
+				\flip d8 g
 			}
 			{
-				\circle \xNote d4
+				\flip d4
 			}
 		}
 
@@ -256,7 +217,7 @@
 	\tempo 4 = 126
 
 	\drummode {
-		\mark "C"
+		\boxMark "C"
 		\time 4/4
 
 		\bar ".|:"
@@ -276,7 +237,7 @@
 	\tempo 4 = 126
 
 	\drummode {
-		\mark "D"
+		\boxMark "D"
 		\time 4/4
 
 		\bar ".|:"

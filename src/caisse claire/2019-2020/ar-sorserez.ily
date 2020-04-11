@@ -4,44 +4,19 @@
 \include "src/caisse claire/core.ily"
 
 \header {
-	title = \markup { \fontsize #4 \bold "Ar Sorserez" }
-	subtitle = \markup {
-		\center-column {
-			\null
-			\line {
-				\fontsize #-1 "Marche inspirée de la Gwerz traditionnelle \"Ar Sorserez\", chantée par les soeurs Goadec"
-			}
-			\line { \fontsize #-2 "Arrangement : Ronan JEGO-AQUILINA" }
-		}
-	}
-	instrument = \markup {
-		\column {
-			\null
-			\null
-			\line { "PARTITION POUR CAISSES CLAIRES" }
-		}
-	}
-	composer = \markup {
-		\column {
-			\null
-			\null
-			\null
-			\null
-			\line { "Composition pour la Caise Claire :" }
-			\line { "Aurélien Étienne / Guillaume Nury" }
-		}
-	}
-	tagline = \markup {
-		\fontsize #-4 "Source : Les soeurs Goadec, chant publié dans le CD « Les soeurs Goadec, chanteuses du Centre-Bretagne (Grands interprètes de Bretagne, Vol. 5) »."
-	}
+	title = "Ar Sorserez"
+	subtitle = "Marche inspirée de la Gwerz traditionnelle \"Ar Sorserez\", chantée par les soeurs Goadec"
+	arranger = "Arrangement : Ronan JEGO-AQUILINA"
+	instrument = "PARTITION POUR CAISSES CLAIRES"
+	composer = "Aurélien Étienne / Guillaume Nury"
+	tagline = "Source : Les soeurs Goadec, chant publié dans le CD « Les soeurs Goadec, chanteuses du Centre-Bretagne (Grands interprètes de Bretagne, Vol. 5) »."
 }
-
 
 \new DrumStaff {
 	\tempo 4 = 80
 	\drummode {
 		\time 4/4
-		\mark \default
+		\boxMark "A"
 		\bar ".|:"
 
 		\repeat volta 2 {
@@ -79,7 +54,7 @@
 
 		\break
 
-		\mark \default
+		\boxMark "B"
 		\time 4/4
 		\bar ".|:"
 

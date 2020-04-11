@@ -5,7 +5,7 @@
 
 \header {
 	title = "Maria Paullanton (version 4/4)"
-	instrument = "Caisses Claires"
+	instrument = "PARTITION POUR CAISSES CLAIRES"
 	composer = "Christophe Declercq"
 	tagline = ##f
 }
@@ -13,7 +13,7 @@
 \new DrumStaff {
 	\drummode {
 		\time 4/4
-		\mark \default
+		\boxMark "A"
 
 		\repeat volta 2 {
 			\fla d16-> g d g->

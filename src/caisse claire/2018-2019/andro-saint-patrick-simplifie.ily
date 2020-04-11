@@ -5,7 +5,7 @@
 
 \header {
 	title = "Andro Saint Patrick (version simplifiée)"
-	instrument = "Caisses Claires"
+	instrument = "PARTITION POUR CAISSES CLAIRES"
 	composer = "Air commun"
 	tagline = ##f
 }

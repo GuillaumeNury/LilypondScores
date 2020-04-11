@@ -5,7 +5,7 @@
 
 \header {
 	title = "Marche Vannetaise"
-	instrument = "Caisses Claires"
+	instrument = "PARTITION POUR CAISSES CLAIRES"
 	composer = "Christophe Declercq"
 	tagline = ##f
 }
@@ -14,7 +14,7 @@
 	\drummode {
 		\time 4/4
 		\partial 8
-		\mark \default
+		\boxMark "A"
 		
 		g8
 
@@ -66,7 +66,7 @@
 		}
 		\break
 
-		\mark \default
+		\boxMark "B"
 		\fla d8. \ra g16
 		(#3 d8) g
 		d16-> g d g
@@ -91,7 +91,7 @@
 		}
 
 		\time 4/4
-		\mark \default
+		\boxMark "C"
 		\repeat volta 2 {
 			d16-> g d g
 			d d g g

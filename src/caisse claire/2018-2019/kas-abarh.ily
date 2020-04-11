@@ -5,7 +5,7 @@
 
 \header {
 	title = "Kas Abarh"
-	instrument = "Caisses Claires"
+	instrument = "PARTITION POUR CAISSES CLAIRES"
 	composer = "Bodadeg Ar Sonerion"
 	tagline = ##f
 }
@@ -13,11 +13,15 @@
 
 \new DrumStaff {
 	\drummode {
-		\mark \default
+		\boxMark "A"
 		\time 2/4
 		\include "kas-abarh/theme_a.ily"
+	}
+}
 
-		\mark \default
+\new DrumStaff {
+	\drummode {
+		\boxMark "B"
 		\include "kas-abarh/theme_b.ily"
 	}
 }

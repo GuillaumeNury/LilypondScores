@@ -5,7 +5,7 @@
 
 \header {
 	title = "Ronds Paludiers"
-	instrument = "Caisses Claires"
+	instrument = "PARTITION POUR CAISSES CLAIRES"
 	composer = "Christophe Declercq"
 	tagline = ##f
 }
@@ -13,7 +13,7 @@
 \new DrumStaff {
 	\drummode {
 		\time 12/8
-		\mark "A"
+		\boxMark "A"
 
 		\repeat volta 2 {
 			\fla d4 g8
@@ -75,8 +75,14 @@
 				\break
 			}
 		}
+	}
+}
 
-		\mark "B"
+
+\new DrumStaff {
+	\drummode {
+		\time 12/8
+		\boxMark "B"
 
 		\repeat volta 2 {
 			\fla d4 g8
@@ -135,8 +141,14 @@
 		(#7 d4.)
 		\bar "|."
 		\break
+	}
+}
 
-		\mark "Final"
+
+\new DrumStaff {
+	\drummode {
+		\time 12/8
+		\boxMark "Final"
 		\fla d4 g8
 		d4 g8->
 		\tuplet 4/6 { d16 g d g }
