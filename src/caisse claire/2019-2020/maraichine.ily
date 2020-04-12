@@ -13,8 +13,7 @@
 }
 
 \new DrumStaff {
-	\once \override Score.MetronomeMark.extra-offset = #'(3 . 3)
-	\once \override Score.RehearsalMark.extra-offset = #'(2 . 3)
+	\once \override Score.MetronomeMark.extra-offset = #'(12 . 4.75)
 	\tempo 4. = 126
 
 	\drummode {
