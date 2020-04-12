@@ -50,10 +50,12 @@ boxMark = #(define-music-function (parser location markup) (markup?)
 
 	% Print tagline one every pages
 	oddFooterMarkup = \markup {
-		\column {
-			\vspace #1
-			\fill-line {
-				\fromproperty #'header:tagline
+		\if-property #'header:tagline {
+			\column {
+				\vspace #1
+				\fill-line {
+					\fromproperty #'header:tagline
+				}
 			}
 		}
 	}

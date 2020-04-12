@@ -7,7 +7,6 @@
 	title = "Andro Saint Patrick (version simplifiée)"
 	instrument = "PARTITION POUR CAISSES CLAIRES"
 	composer = "Air commun"
-	tagline = ##f
 }
 
 

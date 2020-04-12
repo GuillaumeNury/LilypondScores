@@ -7,7 +7,6 @@
 	title = "Evit Mont d’an Iliz"
 	instrument = "PARTITION POUR CAISSES CLAIRES"
 	composer = "Aurélien Étienne"
-	tagline = ##f
 }
 
 \new DrumStaff {

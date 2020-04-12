@@ -7,7 +7,6 @@
 	title = "Kas Abarh"
 	instrument = "PARTITION POUR CAISSES CLAIRES"
 	composer = "Bodadeg Ar Sonerion"
-	tagline = ##f
 }
 
 

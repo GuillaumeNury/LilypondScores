@@ -7,7 +7,6 @@
 	title = "Marche Cayenne"
 	instrument = "PARTITION POUR CAISSES CLAIRES"
 	composer = "Aurélien Étienne / Guillaume Nury"
-	tagline = ##f
 }
 
 

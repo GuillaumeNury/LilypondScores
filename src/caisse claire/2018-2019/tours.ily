@@ -7,7 +7,6 @@
 	title = "Tours"
 	instrument = "Caisses Claires: A B C B C B"
 	composer = "Aurélien Étienne"
-	tagline = ##f
 }
 
 \new DrumStaff {

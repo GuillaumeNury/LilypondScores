@@ -7,7 +7,6 @@
 	title = "Marche Montagne"
 	instrument = "PARTITION POUR CAISSES CLAIRES"
 	composer = "Christophe Declercq"
-	tagline = ##f
 }
 
 \new DrumStaff {

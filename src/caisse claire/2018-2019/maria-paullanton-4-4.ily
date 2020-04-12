@@ -7,7 +7,6 @@
 	title = "Maria Paullanton (version 4/4)"
 	instrument = "PARTITION POUR CAISSES CLAIRES"
 	composer = "Christophe Declercq"
-	tagline = ##f
 }
 
 \new DrumStaff {

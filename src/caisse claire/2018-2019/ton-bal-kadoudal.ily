@@ -7,7 +7,6 @@
 	title = "Ton Bal Kadoudal"
 	instrument = "PARTITION POUR CAISSES CLAIRES"
 	composer = "Christophe Declercq"
-	tagline = ##f
 }
 
 

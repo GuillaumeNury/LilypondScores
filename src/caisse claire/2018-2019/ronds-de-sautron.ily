@@ -7,7 +7,6 @@
 	title = "Ronds de Sautron"
 	instrument = "PARTITION POUR CAISSES CLAIRES"
 	composer = "Aurélien Étienne"
-	tagline = ##f
 }
 
 

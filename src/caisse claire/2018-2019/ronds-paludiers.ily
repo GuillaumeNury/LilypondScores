@@ -7,7 +7,6 @@
 	title = "Ronds Paludiers"
 	instrument = "PARTITION POUR CAISSES CLAIRES"
 	composer = "Christophe Declercq"
-	tagline = ##f
 }
 
 \new DrumStaff {

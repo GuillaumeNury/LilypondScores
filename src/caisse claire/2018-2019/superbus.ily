@@ -7,7 +7,6 @@
 	title = "Ça mousse - Superbus"
 	instrument = "PARTITION POUR CAISSES CLAIRES"
 	composer = "team Scotch-Brite"
-	tagline = ##f
 }
 
 \new DrumStaff {

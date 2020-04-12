@@ -7,7 +7,6 @@
 	title = "The Water is Wide - Ar Mor Divent"
 	instrument = "PARTITION POUR CAISSES CLAIRES"
 	composer = "Christophe Declercq"
-	tagline = ##f
 }
 
 \new DrumStaff {

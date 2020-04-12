@@ -7,7 +7,6 @@
 	title = "Andro Saint Patrick"
 	instrument = "PARTITION POUR CAISSES CLAIRES"
 	composer = "Yann Lemetayer"
-	tagline = ##f
 }
 
 
