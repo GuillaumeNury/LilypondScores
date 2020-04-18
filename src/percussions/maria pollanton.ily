@@ -9,7 +9,15 @@
 	tagline = \markup {
 		\fontsize #-4 "Thèmes traditionnels et d'inspiration traditionnelle"
 	}
-	piece = \markup { \fontsize #1 "Tourne en boucle, avec 2 hauteurs de note (Tom, Darbouka ou Wood blocks)" }
+}
+
+\layout {
+	\override Score.MetronomeMark.extra-offset = #'(0 . 6)
+	\override Score.RehearsalMark.extra-offset = #'(41 . -2)
+}
+
+\paper {
+	markup-system-spacing #'padding = #10
 }
 
 \include "core.ily"
@@ -17,6 +25,7 @@
 \score {		   
 	\new DrumStaff {
 		\tempo 4 = 104
+		\mark "Tourne en boucle, avec 2 hauteurs de note (Tom, Darbouka ou Wood blocks)"
 
 		\drummode {
 			\twotomstyle
