@@ -21,6 +21,7 @@
 }
 
 \score {
+	\midi { }
 	\new StaffGroup {
 		<<
 			\include "jam-blocks.ily"

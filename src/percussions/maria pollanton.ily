@@ -22,7 +22,9 @@
 
 \include "core.ily"
 
-\score {		   
+\score {
+	\midi { }
+
 	\new DrumStaff {
 		\tempo 4 = 104
 		\mark "Tourne en boucle, avec 2 hauteurs de note (Tom, Darbouka ou Wood blocks)"
