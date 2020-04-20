@@ -9,7 +9,6 @@
 	composer = "Yann Lemetayer"
 }
 
-
 \new DrumStaff {
 	\drummode {
 		\time 4/4

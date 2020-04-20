@@ -27,7 +27,7 @@
 
 	\new DrumStaff {
 		\tempo 4 = 104
-		\mark "Tourne en boucle, avec 2 hauteurs de note (Tom, Darbouka ou Wood blocks)"
+		\boxMark "Tourne en boucle, avec 2 hauteurs de note (Tom, Darbouka ou Wood blocks)"
 
 		\drummode {
 			\twotomstyle

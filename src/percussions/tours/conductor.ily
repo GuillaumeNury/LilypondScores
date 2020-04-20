@@ -1,27 +1,30 @@
 % LilypondScores:percus
 \version "2.18.2"
 
+\include "src/percussions/core.ily"
+
 \header {
-	title = \markup { \fontsize #4 \bold "Tours d'Orvault" }
-	subtitle = \markup { \fontsize #1 \bold " Bagad Orvez | Version concerts 2020" }
+	title = "Tours d'Orvault" 
+	subtitle = "Bagad Orvez | Version concerts 2020"
 	instrument = "Jam blocks - Bongos - Tom - Bidon"
 	composer = "R. Jego-Aquilina / G. Nury"
-	tagline = \markup {
-		\fontsize #-4 "Thèmes traditionnels et d'inspiration traditionnelle"
-	}
+	tagline = "Thèmes traditionnels et d'inspiration traditionnelle"
 }
-
-\include "src/percussions/core.ily"
 
 \layout {
 	indent = 18
 	short-indent = 18
 
-	\override DrumStaff.InstrumentName.self-alignment-X = #RIGHT
+	\context {
+		\Score
+		proportionalNotationDuration = #(ly:make-moment 1/10)
+	}
 }
 
+
 \score {
-	\midi { }
+	% \midi { }
+
 	\new StaffGroup {
 		<<
 			\include "jam-blocks.ily"

@@ -5,24 +5,26 @@
 	\set DrumStaff.shortVocalName = #"Bongos"
 	\tempo 4 = 90
 
-	\mark "A - INTRODUCTION"
+	\boxMark "A - INTRODUCTION"
 	\drummode {
 		\time 4/4
 		\twotomstyle
 		\repeat volta 4 {
 			\bar ".|:"
-			r1%{^\markup \bold "solo bidon"%}
-			r1
+			R1%{^\markup \bold "solo bidon"%}
+			R1
 			\bar ":|.|:"
 			\break
 
-			r1%{^\markup \bold "x8"%}
-			r1
+			\hiddenTime 4/4
+
+			R1%{^\markup \bold "x8"%}
+			R1
 			\break
 		}
 	}
 
-	\mark "B - BAGAD"
+	\boxMark "B - BAGAD"
 	\drummode {
 		\time 4/4
 		\twotomstyle
@@ -41,19 +43,19 @@
 		}
 	}
 
-	\mark "C - COUPLE"
+	\boxMark "C - COUPLE"
 	\drummode {
 		\time 4/4
 		\twotomstyle
 		\repeat volta 4 {
 			\bar ":|.|:"
-			r1%{^\markup \bold "x4"%} 
-			r1
+			R1%{^\markup \bold "x4"%} 
+			R1
 			\break
 		}
 	}
 
-	\mark "D - BAGAD"
+	\boxMark "D - BAGAD"
 	\drummode {
 		\time 4/4
 		\twotomstyle
@@ -72,64 +74,64 @@
 		}
 	}
 
-	\mark "E - TRANSITION"
+	\boxMark "E - TRANSITION"
 	\drummode {
 		\time 4/4
 		\twotomstyle
 		\repeat volta 4 {
 			\bar ":|.|:"
-			r1%{^\markup \bold "x4"%}
-			r1
-			\bar ":|.|:"
+			R1%{^\markup \bold "x4"%}
+			R1
+			\bar ":|."
 			\break
 
-			r1
-			r1
-			\break
-		}
-	}
-
-	\mark "F - CHANT"
-	\drummode {
-		\time 4/4
-		\twotomstyle
-		\repeat volta 4 {
-			\bar ":|.|:"
-			r1%{^\markup \bold "x19"%} 
+			\hiddenTime 4/4
+			R1
+			R1
+			\bar ":|."
 			\break
 		}
 	}
 
-	\mark "G - TRANSITION"
+	\boxMark "F - CHANT"
+	\drummode {
+		\time 4/4
+		\twotomstyle
+		R1*19
+		\break
+	}
+
+	\boxMark "G - TRANSITION"
 	\drummode {
 		\time 4/4
 		\twotomstyle
 		\repeat volta 4 {
-			\bar ":|.|:"
-			r1
-			r1
+			\bar ".|:"
+			R1
+			R1
 			\break
 		}
 	}
 
-	\mark "H - BAGAD"
+	\boxMark "H - BAGAD"
 	\drummode {
 		\time 4/4
 		\twotomstyle
 		\repeat volta 4 {
 			\bar ":|.|:"
-			r1
-			r1
+			R1
+			R1
 			\bar ":|."
 			\break
 			
-			r1
-			r1
+			\hiddenTime 4/4
+			R1
+			R1
 			\break
 			
 			\bar ".|:"
-			r1
-			r1
+			R1
+			R1
 			\bar ":|."
 			\break
 		}
