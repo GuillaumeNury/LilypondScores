@@ -11,41 +11,39 @@
 	}
 }
 
-\layout {
-	\override Score.MetronomeMark.extra-offset = #'(0 . 6)
-	\override Score.RehearsalMark.extra-offset = #'(41 . -2)
-}
-
-\paper {
-	markup-system-spacing #'padding = #10
-}
-
 \include "core.ily"
+
+myMusic = \new DrumStaff {
+	\tempo 4 = 104
+
+	\drummode {
+		\boxMark \markup { \fontsize #-2 "Tourne en boucle, avec 2 hauteurs de note (Tom, Darbouka ou Wood blocks)" }
+		\twotomstyle
+		\time 4/4
+		\repeat volta 16 {
+			\bar ".|:"
+				
+			toml8. tomh16
+			r8 toml8
+			toml4
+			r4
+			
+			toml8. tomh16
+			r8 toml8
+			toml4
+			tomh4
+		}
+	}
+}
+
+\score {
+	\layout { }
+
+	\myMusic
+}
 
 \score {
 	\midi { }
-	\layout { }
 
-	\new DrumStaff {
-		\tempo 4 = 104
-		\boxMark "Tourne en boucle, avec 2 hauteurs de note (Tom, Darbouka ou Wood blocks)"
-
-		\drummode {
-			\twotomstyle
-			\time 4/4
-			\repeat volta 4 {
-				\bar ".|:"
-					
-				toml8. tomh16
-				r8 toml8
-				toml4
-				r4
-				
-				toml8. tomh16
-				r8 toml8
-				toml4
-				tomh4
-			}
-		}
-	}
+	\unfoldRepeats \myMusic
 }
