@@ -169,6 +169,7 @@ flip = #(define-music-function (parser location note) (ly:music?)
 			\column {
 				\vspace #1
 				\fill-line {
+					\fontsize #-3
 					\fromproperty #'header:tagline
 				}
 			}

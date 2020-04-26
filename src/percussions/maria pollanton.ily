@@ -24,6 +24,7 @@
 
 \score {
 	\midi { }
+	\layout { }
 
 	\new DrumStaff {
 		\tempo 4 = 104
