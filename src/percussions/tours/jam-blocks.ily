@@ -9,60 +9,64 @@
 		\boxMark "A - INTRODUCTION"
 		\time 4/4
 		\woodblockstyle
-		\repeat volta 4 {
+		\repeat volta 2 {
 			\bar ".|:"
-			R1^\markup \bold "solo bidon"
-			R1
+			\annotation "Solo bidon"
+			R1 \startTextSpan
+			R1 \stopTextSpan
 			\bar ":|.|:"
 			\break
+		}
 
+		\repeat volta 8 {
 			\hiddenTime 4/4
-			R1^\markup \bold "x8"
-			R1
+			\annotation "8x"
+			R1 \startTextSpan
+			R1 \stopTextSpan
 			\break
 		}
 
 		\boxMark "B - BAGAD"
 		\time 4/4
 		\woodblockstyle
-		\repeat volta 4 {
+		\repeat volta 8 {
 			\bar ":|.|:"
-			cb4^\markup \bold "x8"
-			r4
-			r8 rb8
-			rb8 cb8
+			\annotation "8x"
+			wbl4 \startTextSpan
+			r4 \stopTextSpan
+			r8 wbh8
+			wbh8 wbl8
 
-			cb4
+			wbl4
 			r4
-			r8 rb16 rb16
-			rb4
+			r8 wbh16 wbh16
+			wbh4
+			\bar ".|:"
 			\break
 		}
 
 		\boxMark "C - COUPLE"
 		\time 4/4
 		\woodblockstyle
-		\repeat volta 4 {
-			\bar ":|.|:"
-			R1^\markup \bold "x4"
-			R1
-			\break
-		}
+
+		R1*8
+		\break
 
 		\boxMark "D - BAGAD"
 		\time 4/4
 		\woodblockstyle
-		\repeat volta 4 {
-			\bar ":|.|:"
-			cb4^\markup \bold "x4"
-			r4
-			r8 rb8
-			rb8 cb8
+		\repeat volta 8 {
+			\bar ".|:"
+			\annotation "8x"
+			wbl4 \startTextSpan
+			r4 \stopTextSpan
+			r8 wbh8
+			wbh8 wbl8
 
-			cb4
+			wbl4
 			r4
-			r8 rb16 rb16
-			rb4
+			r8 wbh16 wbh16
+			wbh4
 			\break
 		}
 
@@ -71,12 +75,16 @@
 		\woodblockstyle
 		\repeat volta 4 {
 			\bar ":|.|:"
-			R1^\markup \bold "x4"
-			R1
+
+			\annotation "4x"
+			R1 \startTextSpan
+			R1 \stopTextSpan
 			\bar ":|.|:"
+		}
 
-			\break
+		\break
 
+		\repeat volta 2 {
 			\hiddenTime 4/4
 			R1
 			R1
@@ -94,51 +102,51 @@
 		\boxMark "G - TRANSITION"
 		\time 4/4
 		\woodblockstyle
-		\repeat volta 4 {
+		\repeat volta 2 {
 			\bar ".|:"
 			R1
 			R1
 			\break
 		}
 
-		\boxMark "H - BAGAD"
+		\boxMark "H - BAGAD (thème joué 2 fois)"
 		\time 4/4
 		\woodblockstyle
-		\repeat volta 4 {
-			\bar ":|.|:"
-			cb4
-			r4
-			r8 rb8
-			rb8 cb8
+		\repeat volta 2 {
+			\repeat volta 2 {
+				\bar ":|.|:"
+				wbl4
+				r4
+				r8 wbh8
+				wbh8 wbl8
 
-			cb4
-			r4
-			r8 rb16 rb16
-			rb4
-			\bar ":|."
-			\break
-			
+				wbl4
+				r4
+				r8 wbh16 wbh16
+				wbh4
+				\bar ":|."
+				\break
+			}
+				
 			\hiddenTime 4/4
 			R1
 
-			cb4
-			r4
-			r8 rb16 rb16
-			rb4
 			\break
-			
-			\bar ".|:"
-			cb4
-			r4
-			r8 rb8
-			rb8 cb8
+				
+			\repeat volta 2 {
+				\bar ".|:"
+				wbl4
+				r4
+				r8 wbh8
+				wbh8 wbl8
 
-			cb4
-			r4
-			r8 rb16 rb16
-			rb4
-			\bar ":|."
-			\break
+				wbl4
+				r4
+				r8 wbh16 wbh16
+				wbh4
+				\bar ":|."
+				\break
+			}
 		}
 	}
 }

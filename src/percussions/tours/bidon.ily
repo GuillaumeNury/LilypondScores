@@ -3,38 +3,39 @@
 \new DrumStaff {
 	\set DrumStaff.vocalName = #"Bidon"
 	\set DrumStaff.shortVocalName = #"Bidon"
-	\tempo 4 = 90
+	% \tempo 4 = 90
 
 	\boxMark "A - INTRODUCTION"
 	\drummode {
 		\time 4/4
-		\tambourinestyle
-		\repeat volta 4 {
+		\bidonstyle
+		\repeat volta 2 {
 			\bar ".|:"
-			tamb8.%{^\markup \bold "solo bidon"%} tamb16
-			r8 tamb8
-			r8 tamb8
-			tamb4
+			timl8.%{^\markup \bold "solo bidon"%} timl16
+			r8 timl8
+			r8 timl8
+			timl4
 
-			tamb8. tamb16
-			r8 tamb8
-			r8 tamb8
-			tamb4
+			timl8. timl16
+			r8 timl8
+			r8 timl8
+			timl4
 			\bar ":|.|:"
+		}
 
-			\break
+		\break
+		\hiddenTime 4/4
 
-			\hiddenTime 4/4
+		\repeat volta 8 {
+			timl8.%{^\markup \bold "8"%} timl16
+			r8 timl8
+			r8 timl8
+			timl4
 
-			tamb8.%{^\markup \bold "8"%} tamb16
-			r8 tamb8
-			r8 tamb8
-			tamb4
-
-			tamb8. tamb16
-			r8 tamb8
-			r8 tamb8
-			tamb4
+			timl8. timl16
+			r8 timl8
+			r8 timl8
+			timl4
 			\break
 		}
 	}
@@ -42,33 +43,31 @@
 	\boxMark "B - BAGAD"
 	\drummode {
 		\time 4/4
-		\tambourinestyle
-		\repeat volta 4 {
+		\bidonstyle
+		\repeat volta 8 {
 			\bar ":|.|:"
 			R1%{^\markup \bold "x8"%}
 			R1
 			\break
 		}
+		\bar ":|."
 	}
 
 	\boxMark "C - COUPLE"
 	\drummode {
 		\time 4/4
-		\tambourinestyle
-		\repeat volta 4 {
-			\bar ":|.|:"
-			R1%{^\markup \bold "x4"%}
-			R1
-			\break
-		}
+		\bidonstyle
+		R1*8
+		\break
 	}
 
 	\boxMark "D - BAGAD"
 	\drummode {
 		\time 4/4
-		\tambourinestyle
-		\repeat volta 4 {
-			\bar ":|.|:"
+		\bidonstyle
+		\bar ".|:"
+
+		\repeat volta 8 {
 			R1%{^\markup \bold "x4"%}
 			R1
 			\break
@@ -78,20 +77,24 @@
 	\boxMark "E - TRANSITION"
 	\drummode {
 		\time 4/4
-		\tambourinestyle
+		\bidonstyle
 		\repeat volta 4 {
 			\bar ":|.|:"
-			tamb8.%{^\markup \bold "x4"%} tamb16
-			r8 tamb8
-			r8 tamb8
-			tamb4
+			timl8.%{^\markup \bold "x4"%} timl16
+			r8 timl8
+			r8 timl8
+			timl4
 
-			tamb8. tamb16
-			r8 tamb8
-			r8 tamb8
-			tamb4
+			timl8. timl16
+			r8 timl8
+			r8 timl8
+			timl4
+		}
+
+		\break
+
+		\repeat volta 2 {
 			\bar ":|.|:"
-			\break
 
 			\hiddenTime 4/4
 			R1
@@ -104,7 +107,7 @@
 	\boxMark "F - CHANT"
 	\drummode {
 		\time 4/4
-		\tambourinestyle
+		\bidonstyle
 		R1*19
 		\break
 	}
@@ -112,18 +115,18 @@
 	\boxMark "G - TRANSITION"
 	\drummode {
 		\time 4/4
-		\tambourinestyle
-		\repeat volta 4 {
+		\bidonstyle
+		\repeat volta 2 {
 			\bar ".|:"
-			tamb8. tamb16
-			r8 tamb8
-			r8 tamb8
-			tamb4
+			timl8. timl16
+			r8 timl8
+			r8 timl8
+			timl4
 			
-			tamb8. tamb16
-			r8 tamb8
-			r8 tamb8
-			tamb4
+			timl8. timl16
+			r8 timl8
+			r8 timl8
+			timl4
 			\break
 		}
 	}
@@ -131,42 +134,42 @@
 	\boxMark "H - BAGAD"
 	\drummode {
 		\time 4/4
-		\tambourinestyle
-		\repeat volta 4 {
-			\bar ":|.|:"
-			tamb8. tamb16
-			r8 tamb8
-			r8 tamb8
-			tamb4
+		\bidonstyle
+		\repeat volta 2 {
+			\repeat volta 2 {
+				\bar ":|.|:"
+				timl8. timl16
+				r8 timl8
+				r8 timl8
+				timl4
 
-			tamb8. tamb16
-			r8 tamb8
-			r8 tamb8
-			tamb4
-			\bar ":|."
-			\break
+				timl8. timl16
+				r8 timl8
+				r8 timl8
+				timl4
+				\bar ":|."
+				\break
+			}
 
 			\hiddenTime 4/4
 			R1
 
-			tamb8. tamb16
-			r8 tamb8
-			r8 tamb8
-			tamb4
 			\break
-			
-			\bar ".|:"
-			tamb8. tamb16
-			r8 tamb8
-			r8 tamb8
-			tamb4
 
-			tamb8. tamb16
-			r8 tamb8
-			r8 tamb8
-			tamb4
-			\bar ":|."
-			\break
+			\repeat volta 2 {
+				\bar ".|:"
+				timl8. timl16
+				r8 timl8
+				r8 timl8
+				timl4
+
+				timl8. timl16
+				r8 timl8
+				r8 timl8
+				timl4
+				\bar ":|."
+				\break
+			}
 		}
 	}
 }

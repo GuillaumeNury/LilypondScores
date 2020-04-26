@@ -151,22 +151,22 @@
 					\time 4/4
 					\bar ".|:"
 					 
-					\override NoteHead.color = #red cb8.^\markup "x2" \override NoteHead.color = #blue rb16
-					r8 \override NoteHead.color = #blue rb8
-					\override NoteHead.color = #red cb8. \override NoteHead.color = #blue rb16
+					\override NoteHead.color = #red wbl8.^\markup "x2" \override NoteHead.color = #blue wbh16
+					r8 \override NoteHead.color = #blue wbh8
+					\override NoteHead.color = #red wbl8. \override NoteHead.color = #blue wbh16
 					r4
 
 					\bar "||"
 					\time 2/4
-					\override NoteHead.color = #red cb8. \override NoteHead.color = #blue rb16
-					r8 \override NoteHead.color = #blue rb8
+					\override NoteHead.color = #red wbl8. \override NoteHead.color = #blue wbh16
+					r8 \override NoteHead.color = #blue wbh8
 
 					\bar "||"
 					\time 4/4
-					\override NoteHead.color = #red cb8. \override NoteHead.color = #blue rb16
+					\override NoteHead.color = #red wbl8. \override NoteHead.color = #blue wbh16
 					r4
-					\override NoteHead.color = #red cb8. \override NoteHead.color = #blue rb16
-					r8 \override NoteHead.color = #blue rb8
+					\override NoteHead.color = #red wbl8. \override NoteHead.color = #blue wbh16
+					r8 \override NoteHead.color = #blue wbh8
 
 					r4
 					r4
@@ -178,9 +178,9 @@
 					\mark \default
 					\time 4/4
 					\bar ".|:"
-					\override NoteHead.color = #red cb8.^\markup "x8" \override NoteHead.color = #blue rb16
-					r8 \override NoteHead.color = #blue rb8
-					\override NoteHead.color = #red cb4
+					\override NoteHead.color = #red wbl8.^\markup "x8" \override NoteHead.color = #blue wbh16
+					r8 \override NoteHead.color = #blue wbh8
+					\override NoteHead.color = #red wbl4
 					r4
 				}
 			}

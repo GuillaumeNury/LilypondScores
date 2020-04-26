@@ -126,15 +126,17 @@ toms = \drummode {
 		\mark \markup { \box \bold "B2 - Bongos" }
 		\time 4/4
 		\bar ".|:"
-		ss8^\markup "x4" ss16 ss16
-		ss8 hh16 hh16
-		hh8 ss16 ss16
-		ss8 hh16 hh16
+		\bongostyle {
+			bol8^\markup "x4" bol16 bol16
+			bol8 boh16 boh16
+			boh8 bol16 bol16
+			bol8 boh16 boh16
 
-		hh8 ss16 ss16
-		ss16 ss16 hh16 hh16
-		hh8 ss16 ss16
-		ss8 r8
+			boh8 bol16 bol16
+			bol16 bol16 boh16 boh16
+			boh8 bol16 bol16
+			bol8 r8
+		}
 		
 		\bar ":|."
 		\break

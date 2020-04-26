@@ -8,14 +8,16 @@
 	\boxMark "A - INTRODUCTION"
 	\drummode {
 		\time 4/4
-		\tambourinestyle
-		\repeat volta 4 {
+		\onetomstyle
+		\repeat volta 2 {
 			\bar ".|:"
 			R1%{^\markup \bold "solo bidon"%}
 			R1
 			\bar ":|.|:"
-			\break
+		}
 
+		\repeat volta 8 {
+			\break
 			\hiddenTime 4/4
 			
 			R1%{%{^\markup \bold "x8"%}
@@ -27,18 +29,19 @@
 	\boxMark "B - BAGAD"
 	\drummode {
 		\time 4/4
-		\tambourinestyle
-		\repeat volta 4 {
+		\onetomstyle
+		\repeat volta 8 {
 			\bar ":|.|:"
-			tamb8.%{^\markup \bold "x8"%} tamb16
-			r8 tamb8
-			r8 tamb8
-			tamb4
+			toml8.%{^\markup \bold "x8"%} toml16
+			r8 toml8
+			r8 toml8
+			toml4
 			
-			tamb8. tamb16
-			r8 tamb8
-			r8 tamb8
-			tamb4
+			toml8. toml16
+			r8 toml8
+			r8 toml8
+			toml4
+			\bar ":|."
 			\break
 		}
 	}
@@ -46,30 +49,26 @@
 	\boxMark "C - COUPLE"
 	\drummode {
 		\time 4/4
-		\tambourinestyle
-		\repeat volta 4 {
-			\bar ":|.|:"
-			R1%{^\markup \bold "x4"%}
-			R1
-			\break
-		}
+		\onetomstyle
+		R1*8
+		\break
 	}
 
 	\boxMark "D - BAGAD"
 	\drummode {
 		\time 4/4
-		\tambourinestyle
-		\repeat volta 4 {
-			\bar ":|.|:"
-			tamb8.%{^\markup \bold "x4"%} tamb16
-			r8 tamb8
-			r8 tamb8
-			tamb4
+		\onetomstyle
+		\repeat volta 8 {
+			\bar ".|:"
+			toml8.%{^\markup \bold "x4"%} toml16
+			r8 toml8
+			r8 toml8
+			toml4
 			
-			tamb8. tamb16
-			r8 tamb8
-			r8 tamb8
-			tamb4
+			toml8. toml16
+			r8 toml8
+			r8 toml8
+			toml4
 			\break
 		}
 	}
@@ -77,13 +76,17 @@
 	\boxMark "E - TRANSITION"
 	\drummode {
 		\time 4/4
-		\tambourinestyle
+		\onetomstyle
 		\repeat volta 4 {
 			\bar ":|.|:"
 			R1%{^\markup \bold "x4"%}
 			R1
+		}
+
+		\break
+
+		\repeat volta 2 {
 			\bar ":|.|:"
-			\break
 
 			\hiddenTime 4/4
 			R1
@@ -96,7 +99,7 @@
 	\boxMark "F - CHANT"
 	\drummode {
 		\time 4/4
-		\tambourinestyle
+		\onetomstyle
 		R1*19
 		\break
 	}
@@ -104,8 +107,8 @@
 	\boxMark "G - TRANSITION"
 	\drummode {
 		\time 4/4
-		\tambourinestyle
-		\repeat volta 4 {
+		\onetomstyle
+		\repeat volta 2 {
 			\bar ".|:"
 			R1
 			R1
@@ -116,42 +119,41 @@
 	\boxMark "H - BAGAD"
 	\drummode {
 		\time 4/4
-		\tambourinestyle
-		\repeat volta 4 {
-			\bar ":|.|:"
-			tamb8. tamb16
-			r8 tamb8
-			r8 tamb8
-			tamb4
+		\onetomstyle
+		\repeat volta 2 {
+			\repeat volta 2 {
+				\bar ":|.|:"
+				toml8. toml16
+				r8 toml8
+				r8 toml8
+				toml4
 
-			tamb8. tamb16
-			r8 tamb8
-			r8 tamb8
-			tamb4
-			\bar ":|."
-			\break
+				toml8. toml16
+				r8 toml8
+				r8 toml8
+				toml4
+				\bar ":|."
+				\break
+			}
 
 			\hiddenTime 4/4
 			R1
-
-			tamb8. tamb16
-			r8 tamb8
-			r8 tamb8
-			tamb4
 			\break
-			
-			\bar ".|:"
-			tamb8. tamb16
-			r8 tamb8
-			r8 tamb8
-			tamb4
 
-			tamb8. tamb16
-			r8 tamb8
-			r8 tamb8
-			tamb4
-			\bar ":|."
-			\break
+			\repeat volta 2 {
+				\bar ".|:"
+				toml8. toml16
+				r8 toml8
+				r8 toml8
+				toml4
+
+				toml8. toml16
+				r8 toml8
+				r8 toml8
+				toml4
+				\bar ":|."
+				\break
+			}
 		}
 	}
 }

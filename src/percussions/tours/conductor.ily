@@ -21,11 +21,24 @@
 	}
 }
 
+\score {
+	\new StaffGroup {
+		<<
+			\include "jam-blocks.ily"
+			\include "bongos.ily"
+			\include "tom.ily"
+			\include "bidon.ily"
+			% \include "basse.ily"
+		>>
+	}
+}
 
 \score {
-	% \midi { }
+	\midi { }
 
-	\new StaffGroup {
+	\unfoldRepeats \new StaffGroup {
+		\tempo 4 = 90
+
 		<<
 			\include "jam-blocks.ily"
 			\include "bongos.ily"

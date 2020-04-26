@@ -20,14 +20,14 @@
 			\tempo 4. = 126
 			\time 12/8
 			\bar ".|:"
-			rb4.^\markup "x4"
-			cb8 cb8 cb8
-			rb4 cb8
+			wbh4.^\markup "x4"
+			wbl8 wbl8 wbl8
+			wbh4 wbl8
 			r4.
-			rb4.
-			cb4.
-			rb8 cb8 rb8
-			cb4.
+			wbh4.
+			wbl4.
+			wbh8 wbl8 wbh8
+			wbl4.
 			\bar ":|."
 			\break
 		}
@@ -54,14 +54,14 @@
 			\mark \markup { \box \bold "A2" }
 			\time 12/8
 			\bar ".|:"
-			rb4.^\markup "x4"
-			cb8 cb8 cb8
-			rb4 cb8
+			wbh4.^\markup "x4"
+			wbl8 wbl8 wbl8
+			wbh4 wbl8
 			r4.
-			rb4.
-			cb4.
-			rb8 cb8 rb8
-			cb4.
+			wbh4.
+			wbl4.
+			wbh8 wbl8 wbh8
+			wbl4.
 			\break
 		}
 	}
@@ -136,24 +136,24 @@
 		\set DrumStaff.instrumentName = #"Wood Blocks"
 		\repeat volta 1 {
 			\bar ".|"
-			cb8 rb8
-			cb8 rb16 rb16
-			rb4
+			wbl8 wbh8
+			wbl8 wbh16 wbh16
+			wbh4
 			r4
 
-			cb8 rb8
-			cb8 rb16 rb16
-			rb4
+			wbl8 wbh8
+			wbl8 wbh16 wbh16
+			wbh4
 			r4
 
-			cb8 rb8
-			cb8 rb16 rb16
-			rb4
+			wbl8 wbh8
+			wbl8 wbh16 wbh16
+			wbh4
 			r4
 
-			cb8 rb8
-			cb8 rb16 rb16
-			rb4
+			wbl8 wbh8
+			wbl8 wbh16 wbh16
+			wbh4
 			r4
 			\bar "|."
 		}
@@ -181,24 +181,24 @@
 		\set DrumStaff.instrumentName = #"Wood Blocks"
 		\repeat volta 1 {
 			\bar ".|"
-			cb8 rb8
-			cb8 rb16 rb16
-			rb4
+			wbl8 wbh8
+			wbl8 wbh16 wbh16
+			wbh4
 			r4
 
-			cb8 rb8
-			cb8 rb16 rb16
-			rb4
+			wbl8 wbh8
+			wbl8 wbh16 wbh16
+			wbh4
 			r4
 
-			cb8 rb8
-			cb8 rb16 rb16
-			rb4
+			wbl8 wbh8
+			wbl8 wbh16 wbh16
+			wbh4
 			r4
 
-			cb8 rb8
-			cb8 rb16 rb16
-			rb4
+			wbl8 wbh8
+			wbl8 wbh16 wbh16
+			wbh4
 			r4
 			\bar "|."
 		}
@@ -210,10 +210,10 @@
 		\set DrumStaff.instrumentName = #"Wood Blocks"
 		\repeat volta 1 {
 			\bar ".|"
-			cb8 rb8
-			cb8 rb16 rb16
-			rb8 cb8
-			rb4
+			wbl8 wbh8
+			wbl8 wbh16 wbh16
+			wbh8 wbl8
+			wbh4
 			\bar "|."
 		}
 	}

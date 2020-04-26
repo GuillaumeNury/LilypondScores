@@ -10,12 +10,21 @@ boxMark = #(define-music-function (parser location markup) (markup?)
 	#}
 )
 
+annotation = #(define-music-function (parser location text)
+	(markup?)
+	#{
+		\override TextSpanner.bound-details.left.text = \markup { \bold \large $text }
+		\override TextSpanner.font-shape = #'upright
+		\override TextSpanner.dash-period = #-1
+	#}
+)
+
 woodblockstyle = {
-	#(define myWoodBlocks '(
-		(ridebell default #t 3)
-		(cowbell default #t -2))
+	#(define myTable '(
+		(hiwoodblock default #t 3)
+		(lowoodblock default #t -2))
 	)
-	\set DrumStaff.drumStyleTable = #(alist->hash-table myWoodBlocks)
+	\set DrumStaff.drumStyleTable = #(alist->hash-table myTable)
 
 	#(define (color-notehead grob)
 		(let ((mod-position (modulo (ly:grob-property grob 'staff-position) 7)))
@@ -30,11 +39,30 @@ woodblockstyle = {
 }
 
 twotomstyle = {
-	#(define myWoodBlocks '(
+	#(define myTable '(
 		(hightom default #t 3)
 		(lowtom default #t -2))
 	)
-	\set DrumStaff.drumStyleTable = #(alist->hash-table myWoodBlocks)
+	\set DrumStaff.drumStyleTable = #(alist->hash-table myTable)
+	\override DrumStaff.StaffSymbol.line-positions = #'(-2 3)
+	\override Staff.BarLine.bar-extent = #'(-1.5 . 1.5)
+}
+
+onetomstyle = {
+	#(define myTable '(
+		(lowtom default #t -2))
+	)
+	\set DrumStaff.drumStyleTable = #(alist->hash-table myTable)
+	\override DrumStaff.StaffSymbol.line-positions = #'(-2)
+	\override Staff.BarLine.bar-extent = #'(-1.5 . 1.5)
+}
+
+bongostyle = {
+	#(define myTable '(
+		(hibongo default #t 3)
+		(lobongo default #t -2))
+	)
+	\set DrumStaff.drumStyleTable = #(alist->hash-table myTable)
 	\override DrumStaff.StaffSymbol.line-positions = #'(-2 3)
 	\override Staff.BarLine.bar-extent = #'(-1.5 . 1.5)
 }
@@ -49,6 +77,13 @@ hithatstyle = {
 
 tambourinestyle = {
 	#(define mydrums '((tambourine default #t 0)))
+	\override Staff.StaffSymbol.line-positions = #'( 0 )
+	\override Staff.BarLine.bar-extent = #'(-1.5 . 1.5)
+	\set DrumStaff.drumStyleTable = #(alist->hash-table mydrums)
+}
+
+bidonstyle = {
+	#(define mydrums '((lotimbale default #t 0)))
 	\override Staff.StaffSymbol.line-positions = #'( 0 )
 	\override Staff.BarLine.bar-extent = #'(-1.5 . 1.5)
 	\set DrumStaff.drumStyleTable = #(alist->hash-table mydrums)
@@ -102,21 +137,31 @@ flip = #(define-music-function (parser location note) (ly:music?)
 	\override Score.RehearsalMark.font-series = #'bold
 	\override Score.RehearsalMark.break-align-symbols = #'(left-edge)
 	\override Score.RehearsalMark.self-alignment-X = -1
+	\override Score.RehearsalMark.padding = #2
 
-	\override Score.MetronomeMark.extra-offset = #'(-4.5 . 11)
 	\override Score.MetronomeMark.self-alignment-X = #LEFT
+	\override Score.MetronomeMark.outside-staff-priority = #3000
+	\override Score.MetronomeMark.padding = #10
+
+	\override Score.MultiMeasureRest.expand-limit = #4
 
 	\override DrumStaff.InstrumentName.self-alignment-X = #RIGHT
 
 	\context {
 		\Score
 		\compressFullBarRests
+		\override StaffGrouper.staff-staff-spacing.padding = #1.75
+		\override StaffGrouper.staff-staff-spacing.minimum-distance = #2
+		\override StaffGrouper.staff-staff-spacing.basic-distance = #10
+		\override StaffGrouper.staff-staff-spacing.stretchability = #10
 	}
 }
 
 \paper {
 	system-system-spacing.basic-distance = #16
-	score-system-spacing.basic-distance = #30
+	% score-system-spacing.basic-distance = #30
+	top-markup-spacing.basic-distance = #5
+	% markup-system-spacing.basic-distance = #-1
 
 	% Print tagline one every pages
 	oddFooterMarkup = \markup {
@@ -142,7 +187,7 @@ flip = #(define-music-function (parser location note) (ly:music?)
 				\if-property #'header:subtitle {
 					\fill-line {
 						\center-column {
-							\vspace #1
+							\vspace #0.2
 							\line {
 								\fontsize #-0.25 \bold
 								\fromproperty #'header:subtitle
@@ -153,7 +198,7 @@ flip = #(define-music-function (parser location note) (ly:music?)
 				\if-property #'header:arranger {
 					\fill-line {
 						\center-column {
-							\vspace #0.5
+							\vspace #0.2
 							\line {
 								\fontsize #-0.25 \bold
 								\fromproperty #'header:arranger
@@ -170,7 +215,7 @@ flip = #(define-music-function (parser location note) (ly:music?)
 				\if-property #'header:instrument {
 					\fill-line {
 						\center-column {
-							\vspace #1
+							\vspace #0.5
 							\line {
 								\fontsize #1.5 \bold
 								\fromproperty #'header:instrument
@@ -178,7 +223,7 @@ flip = #(define-music-function (parser location note) (ly:music?)
 						}
 					}
 				}
-				\vspace #1
+				\vspace #0.5
 				\fill-line {
 					\null
 					\null
