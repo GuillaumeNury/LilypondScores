@@ -32,7 +32,7 @@
 
 		\fla d4
 		\ra d4
-		(#9 d16->) g16 d g->
+		(#13 d16->) g16 d g->
 		d32 g d g d8->
 
 		\tuplet 3/2 { \ra d8\< (#5 d8\!->) d8 }
@@ -40,7 +40,7 @@
 		\tuplet 3/2 { \ra d8\< (#5 d8\!->) d8 }
 		\ra d8 (#7 \ra g8->)
 
-		(#7 \break \fla d4)
+		(#6 \break \fla d4->)
 		d32 g d g d16 g
 		\fla d4
 		\ra d4
