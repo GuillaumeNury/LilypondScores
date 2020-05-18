@@ -57,10 +57,29 @@ onetomstyle = {
 	\override Staff.BarLine.bar-extent = #'(-1.5 . 1.5)
 }
 
+bassestyle = {
+	#(define myTable '(
+		(bassdrum default #t -2))
+	)
+	\set DrumStaff.drumStyleTable = #(alist->hash-table myTable)
+	\override DrumStaff.StaffSymbol.line-positions = #'(-2)
+	\override Staff.BarLine.bar-extent = #'(-1.5 . 1.5)
+}
+
 bongostyle = {
 	#(define myTable '(
 		(hibongo default #t 3)
 		(lobongo default #t -2))
+	)
+	\set DrumStaff.drumStyleTable = #(alist->hash-table myTable)
+	\override DrumStaff.StaffSymbol.line-positions = #'(-2 3)
+	\override Staff.BarLine.bar-extent = #'(-1.5 . 1.5)
+}
+
+darboukastyle = {
+	#(define myTable '(
+		(hiconga default #t 3)
+		(loconga default #t -2))
 	)
 	\set DrumStaff.drumStyleTable = #(alist->hash-table myTable)
 	\override DrumStaff.StaffSymbol.line-positions = #'(-2 3)
