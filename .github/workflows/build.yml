@@ -1,0 +1,37 @@
+name: Lilypond Score - Build and publish
+
+on:
+  push:
+     branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest 
+
+    steps:
+      - name: checkout repo content
+        uses: actions/checkout@v2
+
+      - name: setup python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 2.7.18
+
+      - name: install dependancies
+        run: |
+          cp config.ci.js config.js
+          curl http://lilypond.org/download/binaries/linux-64/lilypond-2.18.2-1.linux-64.sh -o lilypond.sh
+          sh lilypond.sh --batch
+          npm install
+
+      - name: build
+        run: |
+          npm run release
+
+      - name: deploy
+        uses: JamesIves/github-pages-deploy-action@4.1.6
+        with:
+          branch: gh-pages
+          folder: dist
+          token: ${{ secrets.DEPLOY_TOKEN }}

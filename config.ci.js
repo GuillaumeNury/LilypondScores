@@ -1,4 +1,4 @@
 module.exports = {
-  binPath: "/home/travis/bin/lilypond",
+  binPath: "/home/runner/bin/lilypond",
   ghPageUrl: "https://guillaumenury.github.io/LilypondScores"
 };
