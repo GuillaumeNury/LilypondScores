@@ -1,5 +1,5 @@
 % LilypondScores:percus
-\version "2.18.2"
+\version "2.23.5"
 
 \include "src/percussions/core.ily"
 

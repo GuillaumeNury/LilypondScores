@@ -66,8 +66,8 @@ drumPitchNames
 
 % marges internes :
 \paper {
-	markup-system-spacing #'basic-distance = #25 % distance titres - systèmes
-	system-system-spacing #'basic-distance = #15 % distance entre systèmes
+	markup-system-spacing.basic-distance = #25 % distance titres - systèmes
+	system-system-spacing.basic-distance = #15 % distance entre systèmes
 }
 
 \midi {

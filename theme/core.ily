@@ -168,7 +168,7 @@ flip = #(define-music-function (parser location note) (ly:music?)
 
 	\context {
 		\Score
-		\compressFullBarRests
+		\compressEmptyMeasures
 		\override StaffGrouper.staff-staff-spacing.padding = #1.75
 		\override StaffGrouper.staff-staff-spacing.minimum-distance = #2
 		\override StaffGrouper.staff-staff-spacing.basic-distance = #10
@@ -260,7 +260,7 @@ flip = #(define-music-function (parser location note) (ly:music?)
 	}
 
 	scoreTitleMarkup = \markup { \column {
-		\on-the-fly \print-all-headers { \bookTitleMarkup \hspace #1 }
+		\if \should-print-all-headers { \bookTitleMarkup \hspace #1 }
 		\fill-line {
 			\fromproperty #'header:piece
 			\fromproperty #'header:opus

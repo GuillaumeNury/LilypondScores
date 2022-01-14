@@ -16,12 +16,12 @@ jobs:
       - name: setup python
         uses: actions/setup-python@v2
         with:
-          python-version: 2.7.18
+          python-version: 3.10.1
 
       - name: install dependancies
         run: |
           cp config.ci.js config.js
-          curl http://lilypond.org/download/binaries/linux-64/lilypond-2.18.2-1.linux-64.sh -o lilypond.sh
+          curl https://lilypond.org/download/binaries/linux-64/lilypond-2.23.5-1.linux-64.sh -o lilypond.sh
           sh lilypond.sh --batch
           npm install
 
