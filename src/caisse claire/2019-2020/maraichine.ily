@@ -13,7 +13,7 @@
 }
 
 \new DrumStaff {
-	\once \override Score.MetronomeMark.extra-offset = #'(12 . 4.75)
+	\once \override Score.MetronomeMark.extra-offset = #'(10 . -5.25)
 	\tempo 4. = 126
 
 	\drummode {
@@ -48,9 +48,9 @@
 		(#6 g4.\!->)
 		\fla d8 g8 \fla d8
 		g8 d8 \fla g8
-		d16\< g d g d8\!
+		\tuplet 4/6 { d16\< g d g\!}
 
-		g4.
+		d8 g8 r8
 		\ra d4.
 		(#7 \ra g4.->)
 		(#6 \ra d4.->)
@@ -58,13 +58,14 @@
 		(#6 g4.->)
 		\fla d8 g8 \fla d8
 		g8 d8 \fla g8
-		d16\< g d g d8\!
+		\tuplet 4/6 { d16\< g d g\!}
 
 		\bar "|."
 	}
 }
 
 \new DrumStaff {
+	\once \override Score.MetronomeMark.extra-offset = #'(3 . -2)
 	\tempo 4. = 126
 
 	\drummode {
@@ -72,60 +73,70 @@
 		\boxMark "A"
 
 		\bar ".|:"
+
 		% Phrase A-1
-		\fla d8[ r8 \ra d8]
-		(#5 d4.)
-		\fla g8[ r8 g8]
-		\fla d8-> g8 d8
+		\repeat volta 2 {
+			\alternative {
+				\volta 1 {
+					d8
+				}
+				\volta 2 {
+					\fla d8[
+				}
+			}
+			r8 \ra d8]
+			(#5 d4.)
+			\fla g8[ r8 g8]
+			\fla d8-> g8 d8
 
-		\fla g8[ r8 g8]
-		\tuplet 4/6 { \drag d16 d8. }
-		\ra d4.\<
-		(#9 d8\![) r8 g8]
+			\fla g8[ r8 g8]
+			\tuplet 4/6 { \drag d16 d8. }
+			\ra d4.\<
+			(#9 d8\![) r8 g8]
 
-		\break
+			\break
 
-		\fla d4.
-		\grace { g16[ d d] } g8[ d8 \fla g8]
-		\ra g8[\v (#6 d8 d8]->)
-		g8[ d8 \fla g8]
+			\fla d4.
+			\grace { g16[ d d] } g8[ d8 \fla g8]
+			\ra g8[\v (#6 d8 d8]->)
+			g8[ d8 \fla g8]
 
-		\ra d8\v[ (#6 g8 \ra g8\v])
-		(#0 \ra d8[ (#6 d8->)) \ra g8]\v
-		(#4 \ra g4.->)
-		(#8 g4.\v)
+			\ra d8\v[ (#6 r8 \ra g8\v])
+			(#0 \ra d8[ (#6 d8->)) \ra g8]\v
+			(#4 \ra g4.->)
+			(#8 g4.\v)
 
-		\break
+			\break
 
-		% Phrase A-2
-		\fla d8[ r8 g8]
-		\ra d4.\<
-		(#9 d8[\!->) r8 d8]
-		\fla g8[ d16 d16 g8]->
+			% Phrase A-2
+			\fla d8[ r8 g8]
+			\ra d4.\<
+			(#9 d8[\!->) r8 d8]
+			\fla g8[ d16 d16 g8]->
 
-		d16\< g d g d8\!->
-		g8[ d8 \fla g8]
-		\fla d8[-> r8 g8]
-		\ra d4.\< (#9
-		
-		\break
+			d16\< g d g d8\!->
+			g8[ d8 \fla g8]
+			\fla d8[-> r8 g8]
+			\ra d4.\< (#9
+			
+			\break
 
-		d4.\!->)
-		\grace { g16[ d d] } 
-		g8[ d8 \fla g8]
-		\ra g8[\v (#6 d8 d8]->)
-		g8[ d8 \fla g8]
+			d4.\!->)
+			\grace { g16[ d d] } 
+			g8[ d8 \fla g8]
+			\ra g8[\v (#6 d8 d8]->)
+			g8[ d8 \fla g8]
 
-		\ra d8\v[ (#6 g8 \ra g8\v])
-		(#0 \ra d8[ (#6 d8->)) \ra g8]\v
-		(#4 \ra g4.->)
-		(#8 g4.\v)
-
-		\bar ":|."
+			\ra d8\v[ (#6 r8 \ra g8\v])
+			(#0 \ra d8[ (#6 d8->)) \ra g8]\v
+			(#4 \ra g4.->)
+			(#8 g4.\v)
+		}
 	}
 }
 
 \new DrumStaff {
+	\once \override Score.MetronomeMark.extra-offset = #'(3 . -6)
 	\tempo 4 = 126
 
 	\drummode {
@@ -198,21 +209,12 @@
 			}
 		}
 
-		r1
-		r1
-		r1
-		r1
-
-		r1
-		r1
-		r1
-		r1
-
 		\bar "|."
 	}
 }
 
 \new DrumStaff {
+	\once \override Score.MetronomeMark.extra-offset = #'(3 . -6)
 	\tempo 4 = 126
 
 	\drummode {
@@ -220,19 +222,13 @@
 		\time 4/4
 
 		\bar ".|:"
-		r1
-		r1
-		r1
-		r1
-		r1
-		r1
-		r1
-		r1
+		R1*8
 		\bar ":|."
 	}
 }
 
 \new DrumStaff {
+	\once \override Score.MetronomeMark.extra-offset = #'(3 . -6)
 	\tempo 4 = 126
 
 	\drummode {
