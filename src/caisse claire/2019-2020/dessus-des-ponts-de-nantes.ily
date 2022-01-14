@@ -31,7 +31,7 @@
 			\break
 
 			\fla d16-> g d g
-			d g \drag d16-> d
+			d[ g \drag d16-> d]
 			g8-> d
 		}
 		\break
