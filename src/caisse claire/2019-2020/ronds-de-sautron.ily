@@ -4,7 +4,7 @@
 \include "src/caisse claire/core.ily"
 
 \header {
-	title = "Ronds de Sautron"
+	title = "Ronds de Sautron (Simple)"
 	instrument = "PARTITION POUR CAISSES CLAIRES"
 	composer = "Aurélien Étienne"
 	arranger = "Arrangement : Ronan JEGO-AQUILINA"
