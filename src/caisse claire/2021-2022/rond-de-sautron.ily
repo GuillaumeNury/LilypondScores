@@ -1,4 +1,4 @@
-% LilypondScores:draft
+% LilypondScores
 \version "2.23.5"
 
 \include "src/caisse claire/core.ily"
