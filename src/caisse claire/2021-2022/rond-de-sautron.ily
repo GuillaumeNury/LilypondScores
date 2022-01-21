@@ -7,12 +7,38 @@
 	title = "Ronds de Sautron"
 	instrument = "PARTITION POUR CAISSES CLAIRES"
 	composer = "Alexandre Guiodo / Guillaume Nury"
+	arranger = "Arrangement : Ronan JEGO-AQUILINA"
+}
+
+\paper {
+	score-system-spacing.basic-distance = #25
 }
 
 \new DrumStaff {
 	\tempo 4 = 96
-
 	\drummode {
+		\boxMark "A - INTRO Solo PIB"
+		\time 4/4
+		R1*7
+		\time 3/4
+		R1*21/4
+		\time 4/4
+		R1*8
+
+		\break
+
+		r1^\markup "Bombardes - Groupe 1" r1 r1
+		r1^\markup "Bombardes - Groupe 2" r1 r1
+
+		\time 3/4
+		R1*18/4
+		r1*6/4^\markup "Bourdons" r1
+	}
+}
+
+\new DrumStaff {
+	\drummode {
+		\boxMark "B - BAGAD joué 2 fois"
 		\time 3/4
 
 		% Phrase 1
@@ -57,5 +83,15 @@
 			\fla d4
 			\grace { g16[ d d] } g4->
 		}
+	}
+}
+
+\new DrumStaff {
+	\drummode {
+		\boxMark "C - Final solo PIB"
+		\time 4/4
+		R1*13
+
+		\bar "|."
 	}
 }
