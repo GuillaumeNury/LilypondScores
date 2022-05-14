@@ -26,39 +26,39 @@
 		r4 g8
 
 		\fla d4.
-		\ra d8[-> (#4 r8 \ra d8]\v)
-		(#0 \ra g8[ (#6 r8 g8]))
-		\ra d4.
+		d8[-> r8 \ra d8]\v
+		(#0 \ra g4.[
+		(#8 \ra d4.]))
 
-		(#7 g4.)
+		(#6 g4.)
 		d8 g d
 		\fla g4 \fla d8
 		r4 g8
 
 		\fla d4.
-		\ra d8[-> (#4 r8 \ra d8]\v)
-		(#0 \ra g8[ (#6 r8 g8]))
-		\ra d4.
+		d8[-> r8 \ra d8]\v
+		(#0 \ra g4.[
+		(#8 \ra d4.]))
 
+		(#6 g4.)
+		\ra d4.
 		(#7 g4.)
-		\ra d4.\<
-		(#7 \ra g4.->)
-		(#6 \ra d4.->)
-
-		(#6 g4.\!->)
-		\fla d8 g8 \fla d8
-		g8 d8 \fla g8
-		\tuplet 4/6 { d16\< g d g\!}
-
-		d8 g8 r8
-		\ra d4.
-		(#7 \ra g4.->)
-		(#6 \ra d4.->)
+		\ra d4.->
 
 		(#6 g4.->)
 		\fla d8 g8 \fla d8
-		g8 d8 \fla g8
-		\tuplet 4/6 { d16\< g d g\!}
+		g8 d8 g8->
+		d16\< d g8 d8\!
+
+		g4.
+		\ra d4.
+		(#7 g4.)
+		\ra d4.->
+
+		(#6 g4.->)
+		\fla d8 g8 \fla d8
+		g8 d8 g8->
+		d16\< d g8 d8\!
 
 		\bar "|."
 	}
@@ -78,7 +78,7 @@
 		\repeat volta 2 {
 			\alternative {
 				\volta 1 {
-					d8
+					g8->
 				}
 				\volta 2 {
 					\fla d8[
@@ -97,14 +97,14 @@
 			\break
 
 			\fla d4.
-			\grace { g16[ d d] } g8[ d8 \fla g8]
-			\ra g8[\v (#6 d8 d8]->)
-			g8[ d8 \fla g8]
+			\grace { d16[ d] } g8[ d8 g8]
+			\ra d8[\v (#6 g8 \ra g8]->)
+			(#6 g8 d8) g8
 
-			\ra d8\v[ (#6 r8 \ra g8\v])
+			d8[\v r8 \ra g8]\v
 			(#0 \ra d8[ (#6 d8->)) \ra g8]\v
-			(#4 \ra g4.->)
-			(#8 g4.\v)
+			(#4 g4.->)
+			r4.
 
 			\break
 
@@ -114,7 +114,7 @@
 			(#9 d8[\!->) r8 d8]
 			\fla g8[ d16 d16 g8]->
 
-			d16\< g d g d8\!->
+			d16\< d g8 d8->\!
 			g8[ d8 \fla g8]
 			\fla d8[-> r8 g8]
 			\ra d4.\< (#9
@@ -122,15 +122,14 @@
 			\break
 
 			d4.\!->)
-			\grace { g16[ d d] } 
-			g8[ d8 \fla g8]
-			\ra g8[\v (#6 d8 d8]->)
-			g8[ d8 \fla g8]
+			\grace { d16[ d] } g8[ d8 g8]
+			\ra d8[\v (#6 g8 \ra g8]->)
+			(#6 g8 d8) g8
 
-			\ra d8\v[ (#6 r8 \ra g8\v])
+			d8[\v r8 \ra g8]\v
 			(#0 \ra d8[ (#6 d8->)) \ra g8]\v
-			(#4 \ra g4.->)
-			(#8 g4.\v)
+			(#4 g4.->)
+			r4.
 		}
 	}
 }
