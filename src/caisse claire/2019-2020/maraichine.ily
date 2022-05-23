@@ -96,8 +96,8 @@
 
 			\break
 
-			\fla d4.
-			\grace { d16[ d] } g8[ d8 g8]
+			\fla d4 \ra d16 (#5 g16
+			d8) g8 g8]
 			\ra d8[\v (#6 g8 \ra g8]->)
 			(#6 g8 d8) g8
 
@@ -121,8 +121,8 @@
 			
 			\break
 
-			d4.\!->)
-			\grace { d16[ d] } g8[ d8 g8]
+			d4\!->) \ra d16 (#5 g16
+			d8) g8 g8]
 			\ra d8[\v (#6 g8 \ra g8]->)
 			(#6 g8 d8) g8
 
