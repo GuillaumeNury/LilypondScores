@@ -143,19 +143,6 @@
 		\time 4/4
 		\bar ".|:"
 
-		% Reprises seulement
-		\repeat volta 2 {
-			\fla d4
-			r8 \fla g8
-			d16\< g d g\!
-			d4->
-
-			r8 \ra g8\v]
-			(#6 d8[ d8]->)
-			g16\< d d g\!
-			d4->
-		}
-
 		% Reprises + leader
 		\break
 
@@ -279,8 +266,8 @@
 
 		\ra d4
 		(#9 d16\<) g16 d g\!
-		\triolet { d16 g16 d8 d8 }
-		g4
+		\ra d4->
+		(#6 g4->)
 
 		\bar ":|."
 
