@@ -18,19 +18,19 @@
 
 		\bar ".|:"
 
-		\fla d8-> \tuplet 3/2 { g16 d g }
+		\fla d8\dr-> \tuplet 3/2 { g16 d g }
 		d8 \fla g8->
-		r8 \fla d8->
+		r8 \fla d8\fr->
 
 		\tuplet 3/2 { d16\< g d } g8\!->
-		\ra d4\<
-		(#13 d8->\!) \ra d8\<
+		\ra d4\dr\<
+		(#13 d8\fr->\!) \ra d8\<
 
-		(#7 \break g16\!->) d16 g d->
-		g16 g d8->
+		(#7 \break g16\dr\!->) d16 g d->
+		g16 g d8\fr->
 		g8 \fla d8->
 
-		\tuplet 3/2 { d16\< g d } g8\!->
+		\tuplet 3/2 { d16\dr\< g d } g8\fr\!->
 		\ra d4\mp
 		(#13 d4)
 
@@ -47,24 +47,33 @@
 
 		\bar ".|:"
 
-		\ra d8\v (#6 g16) d16->
-		g16 g d8->
-		g16\< d16 g8->\!
+		\repeat volta 2 {
+			\ra d8\dr\v (#6 g16) d16\fr->
+			g16 g d8\rn->
+			g16\< d16 g8->\!
 
-		\tuplet 3/2 { d16\< g d g d g\! }
-		d16-> g d d
-		g4->
+			\tuplet 3/2 { d16\dr\< g d g d g\! }
+			d16\fr-> g d d
+			g4\rn->
 
-		\break
+			\break
 
-		\fla d8[-> \ra d8]\mp
-		(#7 g8) \fla d8->
-		d16 \fla g8-> g16
+			\fla d8\rn[-> \ra d8]\mp
+			(#7 g8) \fla d8\dr->
+			d16 \fla g8-> g16
 
-		\fla d8-> g8
-		\ra d4\mp
-		(#13 d4)
-
-		\bar ":|."
+			\fla d8\fr-> g8
+		}
+		\alternative {
+			{
+				\ra d4\dr\mp
+				(#13 d4\fr)
+			}
+			{
+				\ra d4\dr\mp
+				(#13 d8) \tuplet 3/2 { g16 d g }
+				\fla d4\fr
+			}
+		}
 	}
 }

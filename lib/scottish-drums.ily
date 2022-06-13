@@ -110,9 +110,12 @@ drumPitchNames
 		%\override StemTremolo.Y-offset = #-3.3
 		% Crochets de reprises
 		\consists "Horizontal_bracket_engraver"
-		\override HorizontalBracket.staff-padding = #6.5		% distance par rapport à la portée
+		\override HorizontalBracket.staff-padding = #8.25
 		\override HorizontalBracket.direction = #DOWN			% position en-dessous de la portée
 		\override HorizontalBracket.bracket-flare = #'(0 . 0)	% crochets verticaux
+		\override HorizontalBracket.thickness = #10
+		\override HorizontalBracket.color = gold
+		\override HorizontalBracket.edge-height = #'(0 . 0)
 	}
 	\context {
 		\Score
@@ -151,13 +154,13 @@ triolet = #(define-music-function
 	(parser location myMusic)
 	(ly:music?)
 	#{ \drummode { \tuplet 3/2 { #myMusic } } #}
-	)
+)
 
 quintolet = #(define-music-function
 	(parser location myMusic)
 	(ly:music?)
 	#{ \drummode { \tuplet 5/4 { #myMusic } } #}
-	)
+)
 
 
 % NUANCES :
@@ -184,21 +187,20 @@ dynLine = #(define-music-function (parser location text)
 % CROCHETS DE REPRISE :
 % Début :
 dr = #(define-event-function (parser location) ()
-			#{ \startGroup #}
-			)
+	#{ \startGroup #}
+)
 % Fin :
 fr = #(define-event-function (parser location) ()
-			#{ \stopGroup #}
-			)
+	#{ \stopGroup #}
+)
 
 % On one single note :
-rn = \markup \lower #4 \halign #1 {
-	\path #0.1 #'((moveto 0 1)
-		(lineto 0 0)
-		(lineto 2 0)
-		(lineto 2 1))
-}
-
+rn = #(define-event-function (parser location) ()
+	#{ -\markup \with-color "gold" \lower #5.2 \halign #1 {
+			\path #1.075 #'((moveto 0 0) (lineto 2 0))
+		}
+	#}
+)
 
 % FLAS et DRAGS :
 fla = #(define-music-function (parser location myNote)
