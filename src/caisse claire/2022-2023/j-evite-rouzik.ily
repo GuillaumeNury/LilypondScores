@@ -13,7 +13,7 @@
 	\drummode {
 		\time 4/4
 
-		\boxMark "Intro"
+		\boxMark "A - Intro"
 
 		d16[) g \fla \flip d g]
 		\fla d16[ g d \fla g]
@@ -25,7 +25,7 @@
 		d16[ \fla \flip g d g]
 		\fla d4
 
-		\boxMark "Ritournelle"
+		\boxMark "B - Ritournelle"
 
 		\repeat volta 2 {
 			% Mesure 1
@@ -59,7 +59,7 @@
 		}
 
 		\break
-		\boxMark "A"
+		\boxMark "C - Evit T1"
 
 		% Mesure 1
 		\fla d8 g16 d->
@@ -85,7 +85,7 @@
 		\ra d4 (#13 d)
 
 		\break
-		\boxMark "B"
+		\boxMark "D - Evit T2"
 
 		\repeat volta 2 {
 			% Mesure 1
@@ -109,22 +109,11 @@
 			% Mesure 4
 			\tuplet 6/4 { g16 d g } d8->
 			\fla g8\dr \fla d\fr
-		}
-
-		\alternative {
-			{
-				\ra d4 (#13 d)
-			}
-			{
-				\once \override LaissezVibrerTie.X-extent = #'(0 . 0)
-				\once \override LaissezVibrerTie.details.note-head-gap = #(/ 3 -2)
-				\once \override LaissezVibrerTie.extra-offset = #(cons 1 0.7)
-				\ra d4\laissezVibrer\rn #13
-			}
+			\ra d4 (#13 d)
 		}
 
 		\break
-		\boxMark "C"
+		\boxMark "E - Rouzik T1"
 
 		\repeat volta 2 {
 			% Mesure 1
@@ -151,6 +140,8 @@
 			}
 		}
 
+		\boxMark "F - Rouzik T2"
+
 		\repeat volta 2 {
 			% Mesure 3
 			d8\dr) \fla g8
@@ -173,8 +164,7 @@
 			}
 			{
 				\ra d4\dr (#0
-				\ra d2) (#0
-				\ra d2\fr) (#0
+				d4
 			}
 		}
 	}
