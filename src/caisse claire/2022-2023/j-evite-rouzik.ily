@@ -16,6 +16,7 @@
 		\boxMark "A - Intro"
 
 		\repeat volta 2 {
+			\bar ".|:"
 			d16[) g \fla \flip d g]
 			\fla d16[ g d \fla g]
 			d16[ \fla \flip g d g]
