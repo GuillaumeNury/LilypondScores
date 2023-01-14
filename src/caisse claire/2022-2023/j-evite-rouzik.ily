@@ -11,19 +11,21 @@
 
 \new DrumStaff {
 	\drummode {
-		\time 4/4
+		\time 2/4
 
 		\boxMark "A - Intro"
 
-		d16[) g \fla \flip d g]
-		\fla d16[ g d \fla g]
-		d16[ \fla \flip g d g]
-		\fla d16[ g \fla \flip d g]
+		\repeat volta 2 {
+			d16[) g \fla \flip d g]
+			\fla d16[ g d \fla g]
+			d16[ \fla \flip g d g]
+			\fla d16[ g \fla \flip d g]
 
-		\fla d16[ g \fla \flip d g]
-		\fla d16[ g d \fla g]
-		d16[ \fla \flip g d g]
-		\fla d4
+			\fla d16[ g \fla \flip d g]
+			\fla d16[ g d \fla g]
+			d16[ \fla \flip g d g]
+			\fla d4
+		}
 
 		\boxMark "B - Ritournelle"
 
@@ -140,6 +142,7 @@
 			}
 		}
 
+		\break
 		\boxMark "F - Rouzik T2"
 
 		\repeat volta 2 {
@@ -163,8 +166,8 @@
 				\ra d4\laissezVibrer #13
 			}
 			{
-				\ra d4\dr (#0
-				d4
+				\ra d4
+				(#13 d4)
 			}
 		}
 	}
