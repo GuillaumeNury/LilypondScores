@@ -72,7 +72,7 @@
 
 		% Mesure 2
 		\fla d16. g32 d16. \fla g32
-		d16. d32 \fla g8
+		d16. g32 \fla d8
 		\ra d4 (#13 d)
 		\break
 	
@@ -94,8 +94,8 @@
 			% Mesure 1
 			\fla d8\rn \ra d
 			(#13 d d)
-			\fla d16.\dr g32 d16. d32
-			\fla g8\fr \tuplet 6/4 { d16 g d }
+			\fla g16.\dr d32 g16. g32
+			\fla d8\fr \tuplet 6/4 { d16 g d }
 
 			% Mesure 2
 			\tuplet 6/4 { g16 d g } d8->
@@ -106,8 +106,8 @@
 			% Mesure 3
 			\fla d8\rn \ra d
 			(#13 d d)
-			\fla d16.\dr g32 d16. d32
-			\fla g8\fr \tuplet 6/4 { d16 g d }
+			\fla g16.\dr d32 g16. g32
+			\fla d8\fr \tuplet 6/4 { d16 g d }
 
 			% Mesure 4
 			\tuplet 6/4 { g16 d g } d8->
@@ -120,8 +120,8 @@
 
 		\repeat volta 2 {
 			% Mesure 1
-			d8\dr \fla g
-			\fla d8\fr d16 \fla g16\dr
+			g8\dr \fla d
+			\fla g8\fr d16 \fla g16\dr
 			\fla d16\fr g d \fla g16\dr
 			\fla d8\fr \ra d8
 
@@ -148,15 +148,15 @@
 
 		\repeat volta 2 {
 			% Mesure 3
-			d8\dr) \fla g8
-			\fla d8\fr d16 \fla g16
+			g8\dr) \fla d8
+			\fla g8\fr d16 \fla g16
 			\tuplet 6/4 { d16\dr-> g d g-> d g }
 			\ra d8 (#7 \tuplet 6/4 { g16) d g }
 
 			% Mesure 4
 			\fla d8\fr \ra d8
-			(#7 g8) \tuplet 6/4 { g16 d g }
-			\ra d8-> (#6 \tuplet 6/4 { g16->) d g }
+			(#7 g8) \tuplet 6/4 { d16 g d }
+			\ra g8-> (#6 \tuplet 6/4 { d16->) g d }
 		}
 
 		\alternative {
@@ -164,11 +164,11 @@
 				\once \override LaissezVibrerTie.X-extent = #'(0 . 0)
 				\once \override LaissezVibrerTie.details.note-head-gap = #(/ 3 -2)
 				\once \override LaissezVibrerTie.extra-offset = #(cons 1 0.7)
-				\ra d4\laissezVibrer #13
+				\ra g4->\laissezVibrer #12
 			}
 			{
-				\ra d4
-				(#13 \time 1/4 d4)
+				\ra g4->
+				(#12 \time 1/4 g4)
 			}
 		}
 	}
